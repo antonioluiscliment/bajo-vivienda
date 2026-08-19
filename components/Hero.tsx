@@ -4,35 +4,41 @@ export default function Hero() {
   return (
     <section className="hero">
       <div className="hero-copy">
-        <p className="hero-eyebrow mono">Proyecto de cambio de uso</p>
+        <p className="hero-eyebrow mono">Sector ZP-Pn5 · Ficha PGOU núm. 44</p>
         <h1 className="hero-title">
-          Realización de una vivienda<em>sobre bajo comercial</em>
+          Parque de Actividad Norte de Murcia<em>Segunda etapa</em>
         </h1>
         <p className="hero-sub">
-          Transformación de un local en planta baja en una vivienda tipo
-          loft, con aparcamiento cubierto retranqueado y solución técnica de
-          aislamiento, ventilación y accesibilidad.
+          585.301 m² de suelo urbanizable de uso Servicios en El Puntal
+          (Murcia), junto a la Autovía de Alicante (A-7). 234.120 m²
+          edificables para centro comercial, hoteles, estaciones de
+          servicio y logística.
         </p>
         <div className="hero-ctas">
-          <a className="btn btn-primary" href="#detalle">
-            Ver detalles constructivos →
+          <a className="btn btn-primary" href="mailto:info@parquenortemurcia.es">
+            Solicitar dossier de inversión →
           </a>
-          <a className="btn btn-ghost" href="#memoria">
-            Memoria técnica
+          <a
+            className="btn btn-ghost"
+            href="/assets/zppn5-plano-situacion.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ampliar plano de situación
           </a>
         </div>
         <div className="hero-stats">
           <div className="stat">
-            <div className="n">101 m²</div>
-            <div className="l">Superficie construida</div>
+            <div className="n">585.301 m²</div>
+            <div className="l">Superficie del sector</div>
           </div>
           <div className="stat">
-            <div className="n">89,75 m²</div>
-            <div className="l">Suelo Caviti útil</div>
+            <div className="n">234.120 m²</div>
+            <div className="l">Edificabilidad (uso Servicios)</div>
           </div>
           <div className="stat">
-            <div className="n">5,40 m</div>
-            <div className="l">Frente entre paredes</div>
+            <div className="n">A-7</div>
+            <div className="l">Autovía de Alicante</div>
           </div>
         </div>
       </div>
@@ -42,15 +48,15 @@ export default function Hero() {
           <div className="hero-visual-corner" />
           <div className="hero-visual-image">
             <Image
-              src="/assets/apartamento-3d.jpg"
-              alt="Distribución 3D de la vivienda: estar, comedor, dos dormitorios y aparcamiento cubierto"
+              src="/assets/zppn5-plano-situacion.jpg"
+              alt="Plano de situación del sector Pn-5 (El Puntal, Murcia) junto al enlace de la Autovía de Alicante"
               fill
               sizes="(max-width: 880px) 90vw, 560px"
               style={{ objectFit: "cover" }}
               priority
             />
           </div>
-          <span className="hero-visual-tag mono">Distribución propuesta</span>
+          <span className="hero-visual-tag mono">Plano de situación · Pn-5</span>
         </div>
       </div>
     </section>
