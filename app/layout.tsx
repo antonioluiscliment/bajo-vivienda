@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Realización de una vivienda sobre bajo comercial",
+  title: "Parque de Actividad Norte de Murcia — Fase II · Sector ZP-Pn5",
   description:
-    "Transformación de un local comercial en planta baja en una vivienda tipo loft, con aparcamiento cubierto retranqueado.",
+    "585.301 m² de suelo urbanizable de uso Servicios junto a la Autovía de Alicante (A-7), en el sector ZP-Pn5 (El Puntal, Murcia). Centro comercial, hoteles, estaciones de servicio y logística.",
 };
 
 export default function RootLayout({
