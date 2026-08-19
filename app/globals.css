@@ -223,28 +223,35 @@ img {
   line-height: 1.6;
 }
 
+/* ---------- Page shell (single-viewport layout) ---------- */
+.page-shell {
+  display: flex;
+  flex-direction: column;
+}
+
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
-  min-height: 100svh;
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
   align-items: center;
   padding: 0 clamp(1.6rem, 5vw, 5rem);
   overflow: hidden;
+  flex: 1 1 auto;
+  min-height: 0;
 }
 .hero-copy {
   position: relative;
   z-index: 3;
-  padding-top: 4rem;
+  padding-top: clamp(3.4rem, 8vh, 5.2rem);
 }
 .hero-eyebrow {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 0.78rem;
+  font-size: 0.74rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--terracotta-deep);
-  margin-bottom: 1.4rem;
+  margin-bottom: 1rem;
   display: flex;
   align-items: center;
   gap: 0.7rem;
@@ -259,11 +266,11 @@ img {
 .hero-title {
   font-family: "Archivo Expanded", sans-serif;
   font-weight: 900;
-  font-size: clamp(2.3rem, 4.6vw, 4rem);
-  line-height: 1.03;
+  font-size: clamp(1.9rem, 3.6vw, 3.1rem);
+  line-height: 1.05;
   letter-spacing: -0.01em;
   color: var(--ink);
-  max-width: 12ch;
+  max-width: 15ch;
 }
 .hero-title em {
   font-style: normal;
@@ -272,15 +279,15 @@ img {
 }
 
 .hero-sub {
-  margin-top: 1.6rem;
-  max-width: 38ch;
-  font-size: 1.05rem;
-  line-height: 1.6;
+  margin-top: 1.1rem;
+  max-width: 42ch;
+  font-size: 0.98rem;
+  line-height: 1.55;
   color: var(--ink-soft);
 }
 
 .hero-ctas {
-  margin-top: 2.4rem;
+  margin-top: 1.5rem;
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
@@ -317,22 +324,22 @@ img {
 }
 
 .hero-stats {
-  margin-top: 3.2rem;
+  margin-top: 1.8rem;
   display: flex;
-  gap: 2.2rem;
+  gap: 2rem;
   flex-wrap: wrap;
-  padding-top: 1.6rem;
+  padding-top: 1.1rem;
   border-top: 1px solid var(--line);
 }
 .stat .n {
   font-family: "Archivo Expanded", sans-serif;
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.25rem;
   color: var(--terracotta-deep);
 }
 .stat .l {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 0.68rem;
+  font-size: 0.65rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink-soft);
@@ -345,11 +352,13 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: clamp(1rem, 4vh, 2.4rem) 0;
 }
 .hero-visual-frame {
   position: relative;
   width: 100%;
   max-width: 560px;
+  max-height: 100%;
   border: 2px solid var(--ink);
   background: var(--white);
   padding: 0.6rem;
@@ -357,7 +366,8 @@ img {
 .hero-visual-image {
   position: relative;
   width: 100%;
-  aspect-ratio: 1008 / 1092;
+  aspect-ratio: 1400 / 1226;
+  max-height: 46svh;
 }
 .hero-visual-tag {
   position: absolute;
@@ -388,8 +398,9 @@ img {
   display: flex;
   align-items: center;
   gap: 0.8rem;
-  padding: 2.2rem clamp(1.6rem, 5vw, 5rem);
+  padding: clamp(0.9rem, 2.6vh, 1.5rem) clamp(1.6rem, 5vw, 5rem);
   color: var(--ink-soft);
+  flex: none;
 }
 .cota::before,
 .cota::after {
@@ -501,29 +512,93 @@ img {
 
 /* ---------- Footer ---------- */
 footer {
-  padding: 2.4rem clamp(1.6rem, 5vw, 5rem) 3rem;
+  padding: 1rem clamp(1.6rem, 5vw, 5rem) 1.2rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem;
   border-top: 1px solid var(--line);
   font-family: "IBM Plex Mono", monospace;
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   color: var(--ink-soft);
+  flex: none;
+}
+
+/* Tablet and desktop: the whole page (header + hero + summary strip +
+   footer) fits within one screen, no scrolling. */
+@media (min-width: 881px) {
+  .page-shell {
+    height: 100svh;
+    overflow: hidden;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0;
+  }
 }
 
 @media (max-width: 880px) {
   .hero {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
-    padding-top: 7rem;
+    gap: 1.4rem;
+    padding-top: 5.5rem;
     min-height: auto;
+    overflow-y: auto;
+  }
+  .hero-copy {
+    padding-top: 0;
   }
   .hero-visual {
     order: -1;
+    padding: 0;
+  }
+  .hero-visual-image {
+    max-height: 34svh;
   }
   .detail {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet portrait (e.g. iPad 768-880px wide): still fits one screen,
+   just stacked instead of two-column. */
+@media (min-width: 601px) and (max-width: 880px) {
+  .page-shell {
+    height: 100svh;
+    overflow: hidden;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0;
+  }
+  .hero-title {
+    font-size: clamp(1.6rem, 4.4vw, 2.4rem);
+  }
+  .hero-sub {
+    font-size: 0.88rem;
+    line-height: 1.45;
+  }
+  .hero-stats {
+    margin-top: 1rem;
+    padding-top: 0.8rem;
+  }
+}
+
+/* Phones: readability wins over the no-scroll rule; normal scrolling. */
+@media (max-width: 600px) {
+  .page-shell {
+    height: auto;
+  }
+  .hero {
+    padding-top: 6.5rem;
+    overflow-y: visible;
+  }
+  .hero-visual-image {
+    max-height: none;
   }
 }
 
