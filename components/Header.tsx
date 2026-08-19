@@ -4,11 +4,11 @@ import { useEffect, useRef, useState } from "react";
 
 const NAV_ITEMS = [
   { num: "L.00", label: "Inicio", href: "#contenido", soon: false },
-  { num: "L.01", label: "Memoria técnica", href: "#memoria", soon: false },
-  { num: "L.02", label: "Detalles constructivos", href: "#detalle", soon: false },
+  { num: "L.01", label: "El sector ZP-Pn5", href: "#", soon: true },
+  { num: "L.02", label: "Usos e inversión", href: "#", soon: true },
   { num: "L.03", label: "Planos y superficies", href: "#", soon: true },
-  { num: "L.04", label: "Presupuesto", href: "#", soon: true },
-  { num: "L.05", label: "Eficiencia y ayudas", href: "#", soon: true },
+  { num: "L.04", label: "Conectividad y accesos", href: "#", soon: true },
+  { num: "L.05", label: "Trámites y sistema de actuación", href: "#", soon: true },
   { num: "L.06", label: "Contacto", href: "#", soon: true },
 ];
 
@@ -48,7 +48,7 @@ export default function Header() {
           <span></span>
           <span></span>
         </button>
-        <span className="topbar-tag mono">Bajo comercial · Murcia (B3)</span>
+        <span className="topbar-tag mono">Parque Actividad Norte · Fase II</span>
       </div>
 
       <div
@@ -80,9 +80,9 @@ export default function Header() {
           ))}
         </ul>
         <div className="nav-foot">
-          Reforma de local bajo a vivienda tipo loft
+          Sector ZP-Pn5 · Ficha PGOU núm. 44
           <br />
-          con aparcamiento cubierto retranqueado.
+          El Puntal, Murcia. Suelo Servicios junto a la A-7.
         </div>
       </nav>
     </>
