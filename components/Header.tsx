@@ -3,12 +3,12 @@
 import { useEffect, useRef, useState } from "react";
 
 const NAV_ITEMS = [
-  { num: "L.00", label: "Inicio", href: "#contenido", soon: false },
+  { num: "L.00", label: "Inicio", href: "/", soon: false },
   { num: "L.01", label: "El sector ZP-Pn5", href: "#", soon: true },
-  { num: "L.02", label: "Usos e inversión", href: "#", soon: true },
-  { num: "L.03", label: "Planos y superficies", href: "#", soon: true },
-  { num: "L.04", label: "Conectividad y accesos", href: "#", soon: true },
-  { num: "L.05", label: "Trámites y sistema de actuación", href: "#", soon: true },
+  { num: "L.02", label: "Usos e inversión", href: "/inversion", soon: false },
+  { num: "L.03", label: "Entorno comercial", href: "/entorno", soon: false },
+  { num: "L.04", label: "Conectividad y accesos", href: "/conectividad", soon: false },
+  { num: "L.05", label: "Documentación del Plan Parcial", href: "/documentacion", soon: false },
   { num: "L.06", label: "Contacto", href: "#", soon: true },
 ];
 
