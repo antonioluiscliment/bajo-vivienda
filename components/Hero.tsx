@@ -15,7 +15,10 @@ export default function Hero() {
           servicio y logística.
         </p>
         <div className="hero-ctas">
-          <a className="btn btn-primary" href="mailto:info@parquenortemurcia.es">
+          <a
+            className="btn btn-primary"
+            href="mailto:info@parquenortemurcia.es?subject=Solicitud%20de%20dossier%20de%20inversi%C3%B3n%20%E2%80%94%20Sector%20ZP-Pn5&body=SERVICIO%20NO%20DISPONIBLE%20TODAV%C3%8DA%2C%20PERDONE%20LAS%20MOLESTIAS."
+          >
             Solicitar dossier de inversión →
           </a>
           <a
