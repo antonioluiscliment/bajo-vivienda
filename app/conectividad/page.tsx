@@ -79,16 +79,24 @@ export default function ConectividadPage() {
                 límite norte de la ciudad, junto a la A-7.
               </figcaption>
             </figure>
-            <figure className="content-figure">
-              <Image
-                src="/assets/zppn5-entorno-comercial.jpg"
-                alt="Entorno inmediato del sector: enlace de autovía junto a IKEA Murcia y Centro Comercial Thader, en El Puntal"
-                width={720}
-                height={1612}
+            <figure className="content-figure content-figure-map">
+              <iframe
+                src="https://www.google.com/maps?q=38.024774,-1.147458&z=16&output=embed"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Ubicación en Google Maps: entorno inmediato del sector, junto a IKEA Murcia y Centro Comercial Thader"
               />
               <figcaption>
                 Entorno inmediato del sector: enlace de autovía junto a IKEA
-                Murcia y Centro Comercial Thader, en El Puntal.
+                Murcia y Centro Comercial Thader, en El Puntal.{" "}
+                <a
+                  href="https://maps.app.goo.gl/9KxnTcGDAao3A7e19?g_st=am"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Ver en Google Maps
+                </a>
+                .
               </figcaption>
             </figure>
           </div>
