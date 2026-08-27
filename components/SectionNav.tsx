@@ -3,6 +3,7 @@ const ALL_SECTIONS = [
   { num: "L.03", label: "Entorno comercial", href: "/entorno" },
   { num: "L.04", label: "Conectividad y accesos", href: "/conectividad" },
   { num: "L.05", label: "Documentación del Plan Parcial", href: "/documentacion" },
+  { num: "L.06", label: "Propiedad y planos de urbanización", href: "/propiedad-urbanizacion" },
 ];
 
 export default function SectionNav({ current }: { current: string }) {
