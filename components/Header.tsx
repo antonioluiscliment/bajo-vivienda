@@ -10,7 +10,8 @@ const NAV_ITEMS = [
   { num: "L.04", label: "Conectividad y accesos", href: "/conectividad", soon: false },
   { num: "L.05", label: "Documentación del Plan Parcial", href: "/documentacion", soon: false },
   { num: "L.06", label: "Propiedad y planos de urbanización", href: "/propiedad-urbanizacion", soon: false },
-  { num: "L.07", label: "Contacto", href: "#", soon: true },
+  { num: "L.07", label: "Proyecto de reparcelación", href: "/proyecto-reparcelacion", soon: false },
+  { num: "L.08", label: "Contacto", href: "#", soon: true },
 ];
 
 export default function Header() {
