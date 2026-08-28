@@ -54,8 +54,8 @@ export default function OfertaTerrenoPage() {
             <Image
               src="/assets/parcelario-catastral-afines-detalle.jpg"
               alt="Detalle del conjunto de parcelas afines señalado en azul, al Sureste del Sector"
-              width={300}
-              height={201}
+              width={340}
+              height={191}
             />
             <figcaption>
               Detalle del conjunto de parcelas afines, al Sureste del Sector.
