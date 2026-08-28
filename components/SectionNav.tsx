@@ -5,6 +5,7 @@ const ALL_SECTIONS = [
   { num: "L.05", label: "Documentación del Plan Parcial", href: "/documentacion" },
   { num: "L.06", label: "Propiedad y planos de urbanización", href: "/propiedad-urbanizacion" },
   { num: "L.07", label: "Proyecto de reparcelación", href: "/proyecto-reparcelacion" },
+  { num: "L.08", label: "Oferta de terreno", href: "/oferta-terreno" },
 ];
 
 export default function SectionNav({ current }: { current: string }) {
