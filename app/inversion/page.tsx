@@ -1,50 +1,19 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageHeader from "@/components/PageHeader";
 import SectionNav from "@/components/SectionNav";
+import { PLANOS_URBANIZACION, driveViewUrl } from "@/lib/urbanizacion";
 
 export const metadata: Metadata = {
-  title: "Usos e inversión",
+  title: "Propiedad y planos de urbanización",
   description:
-    "Suelo urbanizable de uso terciario y logístico en el sector ZP-Pn5: economía de la Región de Murcia y usos autorizados por la Norma Urbanística N.5 del Plan Parcial. Oportunidad de inversión inmobiliaria.",
-  alternates: { canonical: "/inversion" },
+    "Propiedad de casi 7.000 m² junto a la rambla, en el límite sur del sector ZP-Pn5 (suelo urbanizable), con proyecto de urbanización redactado (Urbamusa, 2017) y planos disponibles para consulta.",
+  alternates: { canonical: "/propiedad-urbanizacion" },
 };
 
-const USOS = [
-  {
-    tag: "Comercial",
-    title: "Comercio y grandes superficies",
-    text: "Incluye Centros Terciarios Integrados (>30.000 m², oferta comercial, ocio y restauración), grandes establecimientos (>2.500 m² de venta) y comercio local.",
-  },
-  {
-    tag: "Hospedaje",
-    title: "Hoteles",
-    text: "Uso de hospedaje destinado a proporcionar alojamiento temporal a las personas, expresamente recogido como uso terciario permitido.",
-  },
-  {
-    tag: "Automoción",
-    title: "Gasolineras y áreas de servicio",
-    text: "Establecimientos de despacho de carburantes y afines, con posibilidad de tienda de conveniencia, taller y restauración anexos.",
-  },
-  {
-    tag: "Ocio",
-    title: "Restauración, espectáculos y ocio",
-    text: "Servicios de restauración y actividades de ocio y espectáculos (discotecas, salas de fiesta, salas de juego y similares).",
-  },
-  {
-    tag: "Oficinas",
-    title: "Oficinas y servicios profesionales",
-    text: "Actividades terciarias de carácter administrativo, técnico, financiero o de información, para empresas o particulares.",
-  },
-  {
-    tag: "Logística",
-    title: "Almacenes",
-    text: "El uso global del sector incluye expresamente almacenes, junto con los usos de servicios, equipamientos colectivos y terciarios en general.",
-  },
-];
-
-export default function InversionPage() {
+export default function PropiedadUrbanizacionPage() {
   return (
     <>
       <a href="#contenido" className="skip-link">
@@ -53,89 +22,82 @@ export default function InversionPage() {
       <Header />
       <main id="contenido">
         <PageHeader
-          eyebrow="Sector ZP-Pn5 · Usos e inversión"
-          title="Por qué invertir en la segunda etapa del Parque de Actividad Norte"
-          intro="Una economía regional en crecimiento y un marco urbanístico ya aprobado que autoriza expresamente los usos terciarios que interesan a un inversor: comercial, hotelero, estaciones de servicio y logística."
+          eyebrow="Sector ZP-Pn5 · Propiedad y planos de urbanización"
+          title="Una propiedad junto a la rambla, con proyecto de urbanización ya redactado"
+          intro="Casi 7.000 m² de suelo, con proyecto de urbanización de la U.A. 1ª del Plan Parcial redactado en 2017 y planos técnicos disponibles para consulta."
         />
 
         <section className="section">
-          <p className="section-kicker mono">01 — Economía de la Región de Murcia</p>
-          <h2>Un mercado regional en expansión</h2>
+          <p className="section-kicker mono">01 — La propiedad</p>
+          <h2>Casi 7.000 m² de suelo, con cerca de 2.500 m² de edificabilidad</h2>
           <p>
-            La Región de Murcia encadena varios años de crecimiento económico
-            por encima de la media nacional, con un mercado laboral que bate
-            récords de empleo. Son las condiciones de demanda en las que se
-            inserta el sector ZP-Pn5.
+            La propiedad cuenta con casi 7.000 m² de suelo, que permiten una
+            edificabilidad aproximada de 2.500 m². Su situación aproximada es
+            la marcada en el plano: junto a la rambla, en el límite sur del
+            sector.
           </p>
-          <div className="stat-grid">
-            <div className="stat-card">
-              <div className="n">42.488 M€</div>
-              <div className="l">PIB regional 2024 (+6,7% interanual)</div>
-            </div>
-            <div className="stat-card">
-              <div className="n">26.944 €</div>
-              <div className="l">PIB per cápita 2024 (+5,5% interanual)</div>
-            </div>
-            <div className="stat-card">
-              <div className="n">1.589.138</div>
-              <div className="l">Habitantes en la Región de Murcia (INE, 2025)</div>
-            </div>
-            <div className="stat-card">
-              <div className="n">742.100</div>
-              <div className="l">Personas ocupadas — récord histórico (EPA, 2º trim. 2026)</div>
-            </div>
+          <p>
+            De acuerdo con la legislación urbanística vigente, la parcela que
+            se asigne a esta propiedad en el proyecto de reparcelación que se
+            apruebe deberá situarse en la zona señalada.
+          </p>
+          <div className="content-figure">
+            <Image
+              src="/assets/propiedad-urbanizacion.jpg"
+              alt="Ubicación aproximada de la propiedad, junto a la rambla, en el límite Sur del sector ZP-Pn5"
+              width={200}
+              height={320}
+            />
+            <figcaption>
+              Ubicación aproximada de la propiedad, junto a la rambla, en el
+              límite Sur del sector.
+            </figcaption>
           </div>
-          <p className="section-source">
-            Fuentes:{" "}
-            <a
-              href="https://econet.carm.es/inicio/-/crem/sicrem/PU_datosBasicos/sec42.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              CREM — Contabilidad Regional
-            </a>
-            ,{" "}
-            <a
-              href="https://www.idealista.com/news/vacacional/destinos-turisticos/2026/06/16/902051-cual-es-la-poblacion-de-la-region-de-murcia-la-cifra-de-habitantes-en-2026"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              INE (población)
-            </a>{" "}
-            y UGT Región de Murcia (EPA).
+        </section>
+
+        <section className="section">
+          <p className="section-kicker mono">02 — Propiedades colindantes</p>
+          <h2>
+            Hasta 40.000 m² y más de 10.000 m² edificables sumando el
+            entorno
+          </h2>
+          <p>
+            Otras propiedades de familiares y allegados, situadas en torno a
+            la señalada, permitirían sumar en conjunto en torno a 40.000 m²
+            de suelo y una superficie edificable superior a 10.000 m² —
+            ampliando la escala disponible para un inversor interesado en una
+            operación conjunta.
           </p>
         </section>
 
         <section className="section">
-          <p className="section-kicker mono">02 — Norma Urbanística N.5 del Plan Parcial</p>
-          <h2>Usos del suelo terciario ya autorizados</h2>
-          <p>
-            El sector cuenta con Plan Parcial aprobado definitivamente por el
-            Pleno del Excmo. Ayuntamiento de Murcia el 22 de julio de 2011. Su
-            Norma Urbanística N.5 (Régimen urbanístico del suelo) califica el
-            uso global como &ldquo;Servicios, equipamientos colectivos y usos
-            terciarios en general. Almacenes e industrias&rdquo;, y detalla los
-            usos pormenorizados admitidos:
+          <p className="section-kicker mono">
+            03 — Proyecto de Urbanización de la U.A. 1ª
           </p>
-          <div className="use-grid">
-            {USOS.map((u) => (
-              <div className="use-card" key={u.title}>
-                <span className="tag mono">{u.tag}</span>
-                <h3>{u.title}</h3>
-                <p>{u.text}</p>
-              </div>
+          <h2>Planos técnicos de la urbanización, redactados en 2017</h2>
+          <p>
+            El Proyecto de Urbanización de la U.A. 1ª del Plan Parcial del
+            sector ZP-Pn5, promovido por la Junta de Compensación El Puntal 5
+            U.A. 1ª y redactado por Urbamusa en noviembre de 2017, incluye los
+            siguientes planos:
+          </p>
+          <ul className="doc-list">
+            {PLANOS_URBANIZACION.map((p) => (
+              <li key={p.driveId}>
+                <a href={driveViewUrl(p.driveId)} target="_blank" rel="noopener noreferrer">
+                  <span className={`ext mono ${p.ext}`}>{p.ext}</span>
+                  {p.title}
+                </a>
+              </li>
             ))}
-          </div>
+          </ul>
           <p className="section-source">
-            Fuente: Texto Refundido del Plan Parcial de Actividad Económica
-            del sector ZP-Pn5, Normas Urbanísticas N.5 y N.6.3 (Norma
-            Urbanística 1ª — Usos terciarios). Consulta el documento completo
-            en la{" "}
-            <a href="/documentacion">Documentación del Plan Parcial</a>.
+            Los planos se abren desde la carpeta de Drive del proyecto,
+            clasificada y renombrada por contenido.
           </p>
         </section>
 
-        <SectionNav current="/inversion" />
+        <SectionNav current="/propiedad-urbanizacion" />
       </main>
       <Footer />
     </>
