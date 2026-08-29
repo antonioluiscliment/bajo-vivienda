@@ -29,7 +29,12 @@ function resolveSiteUrl(): string {
 
 export const SITE_URL = resolveSiteUrl();
 
-export const SITE_NAME = "Parque de Actividad Norte de Murcia — Fase II · Sector ZP-Pn5";
+export const SITE_NAME = {
+  es: "Parque de Actividad Norte de Murcia — Fase II · Sector ZP-Pn5",
+  en: "Parque de Actividad Norte de Murcia — Phase II · Sector ZP-Pn5",
+} as const;
 
-export const SITE_DESCRIPTION =
-  "585.301 m² de suelo urbanizable de uso terciario y logístico junto a la Autovía de Alicante (A-7), en el sector ZP-Pn5 (El Puntal, Murcia). Oportunidad de inversión inmobiliaria: centro comercial, hoteles, estaciones de servicio y logística.";
+export const SITE_DESCRIPTION = {
+  es: "585.301 m² de suelo urbanizable de uso terciario y logístico junto a la Autovía de Alicante (A-7), en el sector ZP-Pn5 (El Puntal, Murcia). Oportunidad de inversión inmobiliaria: centro comercial, hoteles, estaciones de servicio y logística.",
+  en: "585,301 m² of developable land (suelo urbanizable) for commercial and logistics use next to the A-7 motorway (Autovía de Alicante), in Sector ZP-Pn5 (El Puntal, Murcia). Real-estate investment opportunity: shopping centre, hotels, service stations and logistics.",
+} as const;
