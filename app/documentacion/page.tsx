@@ -6,9 +6,10 @@ import SectionNav from "@/components/SectionNav";
 import DocIndex from "@/components/DocIndex";
 
 export const metadata: Metadata = {
-  title: "Documentación del Plan Parcial — Parque de Actividad Norte de Murcia",
+  title: "Documentación del Plan Parcial",
   description:
-    "Índice completo, clasificado y buscable, del Plan Parcial de Actividad Económica del sector ZP-Pn5, aprobado definitivamente el 22 de julio de 2011.",
+    "Índice completo, clasificado y buscable, del Plan Parcial de Actividad Económica del sector ZP-Pn5 (suelo urbanizable terciario y logístico), aprobado definitivamente el 22 de julio de 2011.",
+  alternates: { canonical: "/documentacion" },
 };
 
 export default function DocumentacionPage() {
