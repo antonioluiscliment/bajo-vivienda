@@ -2,9 +2,30 @@
 
 import { useMemo, useState } from "react";
 import { DOC_CATEGORIES, driveViewUrl } from "@/lib/documentos";
+import type { Locale } from "@/lib/i18n";
 
-export default function DocIndex() {
+const T = {
+  es: {
+    kicker: "Índice documental",
+    h2: "Busca por asunto: red viaria, ruido, inundabilidad, normativa…",
+    placeholder: "Buscar en el expediente (p. ej. 'ruido', 'red viaria', 'normas')…",
+    ariaSearch: "Buscar documento del Plan Parcial",
+    noResults: (q: string) => `Sin resultados para “${q}”. Prueba con otro término.`,
+    note: null as string | null,
+  },
+  en: {
+    kicker: "Document index",
+    h2: "Search by subject: road network, noise, flood risk, bylaws…",
+    placeholder: "Search the case file (e.g. 'noise', 'road network', 'bylaws')…",
+    ariaSearch: "Search Plan Parcial documents",
+    noResults: (q: string) => `No results for “${q}”. Try another term.`,
+    note: "Documents are the official case file as filed with Murcia City Council, and remain in Spanish. Titles below are given in Spanish for that reason.",
+  },
+};
+
+export default function DocIndex({ locale }: { locale: Locale }) {
   const [query, setQuery] = useState("");
+  const t = T[locale];
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -23,22 +44,19 @@ export default function DocIndex() {
 
   return (
     <section className="section">
-      <p className="section-kicker mono">Índice documental</p>
-      <h2>Busca por asunto: red viaria, ruido, inundabilidad, normativa…</h2>
+      <p className="section-kicker mono">{t.kicker}</p>
+      <h2>{t.h2}</h2>
+      {t.note && <p className="section-source">{t.note}</p>}
       <input
         type="search"
         className="doc-search mono"
-        placeholder="Buscar en el expediente (p. ej. 'ruido', 'red viaria', 'normas')…"
+        placeholder={t.placeholder}
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        aria-label="Buscar documento del Plan Parcial"
+        aria-label={t.ariaSearch}
       />
 
-      {totalShown === 0 && (
-        <p className="doc-empty">
-          Sin resultados para &ldquo;{query}&rdquo;. Prueba con otro término.
-        </p>
-      )}
+      {totalShown === 0 && <p className="doc-empty">{t.noResults(query)}</p>}
 
       {filtered.map((cat) => (
         <div className="doc-category" key={cat.key}>
