@@ -5,9 +5,10 @@ import PageHeader from "@/components/PageHeader";
 import SectionNav from "@/components/SectionNav";
 
 export const metadata: Metadata = {
-  title: "Usos e inversión — Parque de Actividad Norte de Murcia",
+  title: "Usos e inversión",
   description:
-    "Economía de la Región de Murcia y usos del suelo terciario autorizados por la Norma Urbanística N.5 del Plan Parcial del sector ZP-Pn5.",
+    "Suelo urbanizable de uso terciario y logístico en el sector ZP-Pn5: economía de la Región de Murcia y usos autorizados por la Norma Urbanística N.5 del Plan Parcial. Oportunidad de inversión inmobiliaria.",
+  alternates: { canonical: "/inversion" },
 };
 
 const USOS = [
