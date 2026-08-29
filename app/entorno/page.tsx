@@ -6,9 +6,10 @@ import PageHeader from "@/components/PageHeader";
 import SectionNav from "@/components/SectionNav";
 
 export const metadata: Metadata = {
-  title: "Entorno comercial — Parque de Actividad Norte de Murcia",
+  title: "Entorno comercial",
   description:
-    "El sector ZP-Pn5 se integra en el principal eje comercial del norte de Murcia, junto a los centros comerciales La Noria, El Tiro, Tader y Nueva Condomina, y a sus dos universidades.",
+    "El sector ZP-Pn5, suelo urbanizable en el norte de Murcia, se integra en el principal eje comercial de la ciudad, junto a los centros comerciales La Noria, El Tiro, Tader y Nueva Condomina, y a sus dos universidades.",
+  alternates: { canonical: "/entorno" },
 };
 
 const CENTROS = [
