@@ -6,9 +6,10 @@ import PageHeader from "@/components/PageHeader";
 import SectionNav from "@/components/SectionNav";
 
 export const metadata: Metadata = {
-  title: "Proyecto de reparcelación — Parque de Actividad Norte de Murcia",
+  title: "Proyecto de reparcelación",
   description:
-    "Documentación del Proyecto de Reparcelación del sector ZP-Pn5: plano parcelario catastral de las parcelas incluidas en el Sector, con las parcelas 12 y 23, titularidad de la propiedad.",
+    "Documentación del Proyecto de Reparcelación del sector ZP-Pn5, suelo urbanizable: plano parcelario catastral de las parcelas incluidas en el Sector, con las parcelas 12 y 23, titularidad de la propiedad.",
+  alternates: { canonical: "/proyecto-reparcelacion" },
 };
 
 export default function ProyectoReparcelacionPage() {
