@@ -1,6 +1,32 @@
 import type { Metadata } from "next";
+import { Archivo_Expanded, IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from "@/lib/site";
+
+// Self-hosted via next/font: downloaded and served from our own domain at
+// build time (no request to fonts.googleapis.com/fonts.gstatic.com at
+// runtime), with `display: swap` to avoid blocking first render. Same
+// families and weights as before, just faster and one less third party.
+const archivoExpanded = Archivo_Expanded({
+  subsets: ["latin"],
+  weight: ["700", "900"],
+  variable: "--font-archivo-expanded",
+  display: "swap",
+});
+
+const plexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-plex-mono",
+  display: "swap",
+});
+
+const plexSans = IBM_Plex_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-plex-sans",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -93,19 +119,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin=""
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Archivo+Expanded:wght@700;900&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
-          rel="stylesheet"
-        />
-      </head>
+    <html
+      lang="es"
+      className={`${archivoExpanded.variable} ${plexMono.variable} ${plexSans.variable}`}
+    >
       <body>
         <script
           type="application/ld+json"
