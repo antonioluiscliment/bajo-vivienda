@@ -6,9 +6,10 @@ import PageHeader from "@/components/PageHeader";
 import SectionNav from "@/components/SectionNav";
 
 export const metadata: Metadata = {
-  title: "Conectividad y accesos — Parque de Actividad Norte de Murcia",
+  title: "Conectividad y accesos",
   description:
-    "Situación geográfica del sector ZP-Pn5 en el norte de Murcia y su enlace directo con las autovías A-7 y A-30, la red que vertebra el sureste de España.",
+    "Situación geográfica del sector ZP-Pn5, suelo urbanizable con excelente conectividad logística en el norte de Murcia, con enlace directo a las autovías A-7 y A-30, la red que vertebra el sureste de España.",
+  alternates: { canonical: "/conectividad" },
 };
 
 const BOUNDS = [
