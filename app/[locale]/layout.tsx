@@ -130,7 +130,7 @@ export function generateMetadata({
       description,
       images: [
         {
-          url: "/assets/zppn5-plano-situacion.jpg",
+          url: "/assets/og-norte-murcia.jpg",
           width: 1200,
           height: 630,
           alt: OG_IMAGE_ALT[locale],
@@ -141,7 +141,7 @@ export function generateMetadata({
       card: "summary_large_image",
       title: name,
       description,
-      images: ["/assets/zppn5-plano-situacion.jpg"],
+      images: ["/assets/og-norte-murcia.jpg"],
     },
   };
 }
