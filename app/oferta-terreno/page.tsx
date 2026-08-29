@@ -6,9 +6,10 @@ import PageHeader from "@/components/PageHeader";
 import SectionNav from "@/components/SectionNav";
 
 export const metadata: Metadata = {
-  title: "Oferta de terreno — Parque de Actividad Norte de Murcia",
+  title: "Oferta de terreno",
   description:
-    "Conjunto de parcelas afines del Sector ZP-Pn5, señaladas en el plano parcelario catastral, con posibilidades de acuerdo de venta ante una buena oferta.",
+    "Conjunto de parcelas afines del Sector ZP-Pn5 (suelo urbanizable, activo inmobiliario), señaladas en el plano parcelario catastral, con posibilidades de acuerdo de venta ante una buena oferta.",
+  alternates: { canonical: "/oferta-terreno" },
 };
 
 export default function OfertaTerrenoPage() {
