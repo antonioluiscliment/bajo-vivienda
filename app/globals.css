@@ -24,7 +24,7 @@ html {
 body {
   background: var(--cream);
   color: var(--ink);
-  font-family: "IBM Plex Sans", sans-serif;
+  font-family: var(--font-plex-sans), sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
@@ -39,7 +39,7 @@ img {
 }
 
 .mono {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   letter-spacing: 0.04em;
 }
 
@@ -52,7 +52,7 @@ img {
   color: var(--cream);
   padding: 0.75rem 1.25rem;
   z-index: 200;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   font-size: 0.85rem;
 }
 .skip-link:focus {
@@ -116,7 +116,7 @@ img {
 }
 
 .topbar-tag {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -162,7 +162,7 @@ img {
 }
 
 .nav-eyebrow {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   font-size: 0.72rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -189,13 +189,13 @@ img {
   padding: 1rem 0;
   text-decoration: none;
   color: var(--cream);
-  font-family: "Archivo Expanded", sans-serif;
+  font-family: var(--font-archivo-expanded), sans-serif;
   font-weight: 700;
   font-size: 1.05rem;
   transition: color 0.2s ease, padding-left 0.2s ease;
 }
 .nav-list a .num {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   font-weight: 400;
   font-size: 0.78rem;
   color: var(--terracotta);
@@ -207,7 +207,7 @@ img {
 }
 .nav-list .soon {
   margin-left: auto;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   font-size: 0.65rem;
   color: var(--ink-soft);
   background: var(--concrete);
@@ -215,7 +215,7 @@ img {
 }
 .nav-foot {
   margin-top: auto;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   font-size: 0.72rem;
   color: var(--concrete);
   padding-top: 1.6rem;
@@ -246,7 +246,7 @@ img {
   padding-top: clamp(3.4rem, 8vh, 5.2rem);
 }
 .hero-eyebrow {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   font-size: 0.74rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -264,7 +264,7 @@ img {
 }
 
 .hero-title {
-  font-family: "Archivo Expanded", sans-serif;
+  font-family: var(--font-archivo-expanded), sans-serif;
   font-weight: 900;
   font-size: clamp(1.9rem, 3.6vw, 3.1rem);
   line-height: 1.05;
@@ -293,7 +293,7 @@ img {
   flex-wrap: wrap;
 }
 .btn {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   font-size: 0.85rem;
   letter-spacing: 0.04em;
   padding: 0.95rem 1.6rem;
@@ -332,13 +332,13 @@ img {
   border-top: 1px solid var(--line);
 }
 .stat .n {
-  font-family: "Archivo Expanded", sans-serif;
+  font-family: var(--font-archivo-expanded), sans-serif;
   font-weight: 700;
   font-size: 1.25rem;
   color: var(--terracotta-deep);
 }
 .stat .l {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   font-size: 0.65rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -375,7 +375,7 @@ img {
   right: -1px;
   background: var(--ink);
   color: var(--cream);
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   font-size: 0.66rem;
   letter-spacing: 0.08em;
   padding: 0.4rem 0.7rem;
@@ -410,7 +410,7 @@ img {
   background: var(--line);
 }
 .cota-label {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   font-size: 0.72rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -447,7 +447,7 @@ img {
 }
 .detail-visual figcaption {
   margin-top: 0.9rem;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   font-size: 0.7rem;
   color: var(--ink-soft);
   letter-spacing: 0.03em;
@@ -455,7 +455,7 @@ img {
 }
 
 .detail-text .kicker {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -463,7 +463,7 @@ img {
   margin-bottom: 1rem;
 }
 .detail-text h2 {
-  font-family: "Archivo Expanded", sans-serif;
+  font-family: var(--font-archivo-expanded), sans-serif;
   font-weight: 900;
   font-size: clamp(1.6rem, 2.6vw, 2.3rem);
   line-height: 1.15;
@@ -497,7 +497,7 @@ img {
   border-bottom: none;
 }
 .checklist .mk {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   font-size: 0.72rem;
   color: var(--white);
   background: var(--teal);
@@ -518,7 +518,7 @@ footer {
   flex-wrap: wrap;
   gap: 1rem;
   border-top: 1px solid var(--line);
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   font-size: 0.68rem;
   color: var(--ink-soft);
   flex: none;
@@ -624,7 +624,7 @@ footer {
   border-bottom: 1px solid var(--line);
 }
 .page-header-eyebrow {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   font-size: 0.78rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -641,7 +641,7 @@ footer {
   background: var(--terracotta-deep);
 }
 .page-header h1 {
-  font-family: "Archivo Expanded", sans-serif;
+  font-family: var(--font-archivo-expanded), sans-serif;
   font-weight: 900;
   font-size: clamp(2rem, 4vw, 3.2rem);
   line-height: 1.06;
@@ -660,7 +660,7 @@ footer {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   font-size: 0.72rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -681,7 +681,7 @@ footer {
   border-bottom: none;
 }
 .section-kicker {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -689,7 +689,7 @@ footer {
   margin-bottom: 0.9rem;
 }
 .section h2 {
-  font-family: "Archivo Expanded", sans-serif;
+  font-family: var(--font-archivo-expanded), sans-serif;
   font-weight: 900;
   font-size: clamp(1.5rem, 2.4vw, 2.1rem);
   line-height: 1.15;
@@ -698,7 +698,7 @@ footer {
   margin-bottom: 1rem;
 }
 .section h3 {
-  font-family: "Archivo Expanded", sans-serif;
+  font-family: var(--font-archivo-expanded), sans-serif;
   font-weight: 700;
   font-size: 1.15rem;
   color: var(--ink);
@@ -712,7 +712,7 @@ footer {
 }
 .section-source {
   margin-top: 1.6rem;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   font-size: 0.68rem;
   color: var(--ink-soft);
   letter-spacing: 0.03em;
@@ -736,7 +736,7 @@ footer {
   padding: 1.6rem 1.4rem;
 }
 .stat-card .n {
-  font-family: "Archivo Expanded", sans-serif;
+  font-family: var(--font-archivo-expanded), sans-serif;
   font-weight: 700;
   font-size: 1.7rem;
   color: var(--terracotta-deep);
@@ -744,7 +744,7 @@ footer {
 }
 .stat-card .l {
   margin-top: 0.5rem;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   font-size: 0.7rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -769,7 +769,7 @@ footer {
 }
 .use-card .tag {
   display: inline-block;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   font-size: 0.62rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -800,7 +800,7 @@ footer {
   padding-left: 1rem;
 }
 .bounds-card .dir {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   font-size: 0.68rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -831,20 +831,20 @@ footer {
   border-bottom: none;
 }
 .anchor-list .mk {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   font-size: 0.68rem;
   color: var(--terracotta-deep);
   flex: none;
   width: 2.4rem;
 }
 .anchor-list .name {
-  font-family: "Archivo Expanded", sans-serif;
+  font-family: var(--font-archivo-expanded), sans-serif;
   font-weight: 700;
   font-size: 0.98rem;
   color: var(--ink);
 }
 .anchor-list .place {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   font-size: 0.72rem;
   color: var(--ink-soft);
   margin-left: 0.5rem;
@@ -873,7 +873,7 @@ footer {
 }
 .content-figure figcaption {
   margin-top: 0.7rem;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   font-size: 0.7rem;
   color: var(--ink-soft);
   line-height: 1.5;
@@ -892,7 +892,7 @@ footer {
   padding: 0.8rem 1rem;
   border: 1.5px solid var(--ink);
   background: var(--white);
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   font-size: 0.88rem;
   color: var(--ink);
 }
@@ -903,7 +903,7 @@ footer {
   margin-bottom: 2.2rem;
 }
 .doc-category-title {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   font-size: 0.72rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -942,7 +942,7 @@ footer {
   padding-left: 0.5rem;
 }
 .doc-list .ext {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   font-size: 0.62rem;
   color: var(--white);
   background: var(--concrete);
@@ -981,13 +981,13 @@ footer {
   background: var(--terracotta-deep);
 }
 .next-grid .num {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-plex-mono), monospace;
   font-size: 0.68rem;
   color: var(--terracotta);
 }
 .next-grid .label {
   margin-top: 0.4rem;
-  font-family: "Archivo Expanded", sans-serif;
+  font-family: var(--font-archivo-expanded), sans-serif;
   font-weight: 700;
   font-size: 1.02rem;
 }
