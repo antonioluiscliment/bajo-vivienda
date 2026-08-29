@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Archivo_Expanded, IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
+import { Archivo, IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import "../globals.css";
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from "@/lib/site";
 import {
@@ -16,9 +16,16 @@ import {
 // build time (no request to fonts.googleapis.com/fonts.gstatic.com at
 // runtime), with `display: swap` to avoid blocking first render. Same
 // families and weights as before, just faster and one less third party.
-const archivoExpanded = Archivo_Expanded({
+//
+// Google Fonts retired "Archivo Expanded" as a standalone family; it now
+// lives inside the variable "Archivo" family's width (`wdth`) axis. We load
+// Archivo as a variable font with that axis enabled and pair it in CSS with
+// `font-stretch: expanded` (the ~125% end of that axis) to reproduce the
+// original expanded look, keeping the same 700/900 weights via font-weight.
+const archivoExpanded = Archivo({
   subsets: ["latin"],
-  weight: ["700", "900"],
+  weight: "variable",
+  axes: ["wdth"],
   variable: "--font-archivo-expanded",
   display: "swap",
 });
