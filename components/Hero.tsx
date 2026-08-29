@@ -59,7 +59,7 @@ export default function Hero({ locale }: { locale: Locale }) {
           </a>
           <a
             className="btn btn-ghost"
-            href="/assets/zppn5-plano-situacion.jpg"
+            href="/assets/sector-plano-anotado.jpg"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -87,7 +87,7 @@ export default function Hero({ locale }: { locale: Locale }) {
           <div className="hero-visual-corner" />
           <div className="hero-visual-image">
             <Image
-              src="/assets/zppn5-plano-situacion.jpg"
+              src="/assets/sector-plano-anotado.jpg"
               alt={t.imgAlt}
               fill
               sizes="(max-width: 880px) 90vw, 560px"
