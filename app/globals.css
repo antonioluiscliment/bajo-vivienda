@@ -404,9 +404,9 @@ img {
 .hero-visual-image {
   position: relative;
   width: 100%;
-  aspect-ratio: 1400 / 1226;
+  aspect-ratio: 1400 / 625;
   max-height: 46svh;
-}
+}  
 .hero-visual-tag {
   position: absolute;
   bottom: -1px;
