@@ -225,6 +225,7 @@ img {
   text-decoration: none;
   color: var(--cream);
   font-family: var(--font-archivo-expanded), sans-serif;
+  font-stretch: expanded;
   font-weight: 700;
   font-size: 1.05rem;
   transition: color 0.2s ease, padding-left 0.2s ease;
@@ -300,6 +301,7 @@ img {
 
 .hero-title {
   font-family: var(--font-archivo-expanded), sans-serif;
+  font-stretch: expanded;
   font-weight: 900;
   font-size: clamp(1.9rem, 3.6vw, 3.1rem);
   line-height: 1.05;
@@ -368,6 +370,7 @@ img {
 }
 .stat .n {
   font-family: var(--font-archivo-expanded), sans-serif;
+  font-stretch: expanded;
   font-weight: 700;
   font-size: 1.25rem;
   color: var(--terracotta-deep);
@@ -499,6 +502,7 @@ img {
 }
 .detail-text h2 {
   font-family: var(--font-archivo-expanded), sans-serif;
+  font-stretch: expanded;
   font-weight: 900;
   font-size: clamp(1.6rem, 2.6vw, 2.3rem);
   line-height: 1.15;
@@ -680,6 +684,7 @@ footer {
 }
 .page-header h1 {
   font-family: var(--font-archivo-expanded), sans-serif;
+  font-stretch: expanded;
   font-weight: 900;
   font-size: clamp(2rem, 4vw, 3.2rem);
   line-height: 1.06;
@@ -728,6 +733,7 @@ footer {
 }
 .section h2 {
   font-family: var(--font-archivo-expanded), sans-serif;
+  font-stretch: expanded;
   font-weight: 900;
   font-size: clamp(1.5rem, 2.4vw, 2.1rem);
   line-height: 1.15;
@@ -737,6 +743,7 @@ footer {
 }
 .section h3 {
   font-family: var(--font-archivo-expanded), sans-serif;
+  font-stretch: expanded;
   font-weight: 700;
   font-size: 1.15rem;
   color: var(--ink);
@@ -775,6 +782,7 @@ footer {
 }
 .stat-card .n {
   font-family: var(--font-archivo-expanded), sans-serif;
+  font-stretch: expanded;
   font-weight: 700;
   font-size: 1.7rem;
   color: var(--terracotta-deep);
@@ -877,6 +885,7 @@ footer {
 }
 .anchor-list .name {
   font-family: var(--font-archivo-expanded), sans-serif;
+  font-stretch: expanded;
   font-weight: 700;
   font-size: 0.98rem;
   color: var(--ink);
@@ -1026,6 +1035,7 @@ footer {
 .next-grid .label {
   margin-top: 0.4rem;
   font-family: var(--font-archivo-expanded), sans-serif;
+  font-stretch: expanded;
   font-weight: 700;
   font-size: 1.02rem;
 }
