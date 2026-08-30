@@ -85,7 +85,7 @@ const T = {
       "The northern area of Murcia is undergoing major residential expansion, and the vacant spaces towards the city are nearing the end of their development. A case in point is the sports complex under construction to the north (north-east) of Plaza de los Cubos, on Avenida de Juan de Borbón.",
     s3kicker: "03 — A delay does not harm the investment",
     s3h2: "The appreciation of a central hub",
-    s3p: 'Any delay in carrying out the development, due to the time the reparcelling process takes to conclude, does not harm the investment already made. On the contrary: the accelerated development of the whole northern area contributes to the appreciation of this central hub, which has become a prime infill site ("almendra") surrounded by the adjoining developments and main transport routes.',
+    s3p: 'Any delay in carrying out the development, due to the time the reparcelling process takes to conclude, does not harm the investment already made. On the contrary: the accelerated development of the whole northern area contributes to the appreciation of this central hub, which has become a prime infill site, kernel, surrounded by the adjoining developments and main transport routes.',
   },
 };
 
