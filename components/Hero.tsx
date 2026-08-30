@@ -1,5 +1,5 @@
 import Image from "next/image";
-import type { Locale } from "@/lib/i18n";
+import { localeHref, type Locale } from "@/lib/i18n";
 
 const T = {
   es: {
@@ -9,8 +9,6 @@ const T = {
     sub: "585.301 m² de suelo urbanizable de uso Servicios en El Puntal (Murcia), junto a la Autovía de Alicante (A-7). 234.120 m² edificables para centro comercial, hoteles, estaciones de servicio y logística.",
     ctaDossier: "Solicitar dossier de inversión →",
     ctaPlano: "Ampliar plano de situación",
-    mailSubject: "Solicitud de dossier de inversión — Sector ZP-Pn5",
-    mailBody: "SERVICIO NO DISPONIBLE TODAVÍA, PERDONE LAS MOLESTIAS.",
     stat1n: "585.301 m²",
     stat1l: "Superficie del sector",
     stat2n: "234.120 m²",
@@ -26,8 +24,6 @@ const T = {
     sub: "585,301 m² of developable land (suelo urbanizable) for Services use in El Puntal (Murcia), next to the A-7 motorway (Autovía de Alicante). 234,120 m² of buildable floor area for a shopping centre, hotels, service stations and logistics.",
     ctaDossier: "Request investment dossier →",
     ctaPlano: "View site plan",
-    mailSubject: "Investment dossier request — Sector ZP-Pn5",
-    mailBody: "SERVICE NOT YET AVAILABLE, SORRY FOR THE INCONVENIENCE.",
     stat1n: "585,301 m²",
     stat1l: "Sector surface area",
     stat2n: "234,120 m²",
@@ -40,9 +36,6 @@ const T = {
 
 export default function Hero({ locale }: { locale: Locale }) {
   const t = T[locale];
-  const mailto = `mailto:info@parquenortemurcia.es?subject=${encodeURIComponent(
-    t.mailSubject
-  )}&body=${encodeURIComponent(t.mailBody)}`;
 
   return (
     <section className="hero">
@@ -54,7 +47,7 @@ export default function Hero({ locale }: { locale: Locale }) {
         </h1>
         <p className="hero-sub">{t.sub}</p>
         <div className="hero-ctas">
-          <a className="btn btn-primary" href={mailto}>
+          <a className="btn btn-primary" href={localeHref(locale, "/solicitar-dossier")}>
             {t.ctaDossier}
           </a>
           <a
