@@ -63,6 +63,11 @@ const T = {
     s3kicker: "03 — El retraso no perjudica la inversión",
     s3h2: "La revalorización de un núcleo central",
     s3p: "El posible retraso en la ejecución del desarrollo, por el tiempo que tarde en concluirse la reparcelación, no perjudica a la inversión realizada. Al contrario: el desarrollo acelerado de toda la zona Norte contribuye a la revalorización de este núcleo central, que ha quedado como una almendra entre los desarrollos urbanísticos colindantes y las principales vías de comunicación.",
+    s4kicker: "04 — Precios actuales",
+    s4h2: "Precio actual de la oferta de terreno",
+    s4p: "En el actual estado de desarrollo del Sector, la oferta de terreno tiene un precio por metro cuadrado bruto desde 400 €.",
+    s4stat: "400 €/m²",
+    s4statL: "Precio bruto de suelo, desde",
   },
   en: {
     eyebrow: "Sector ZP-Pn5 · Land for Sale",
@@ -86,6 +91,11 @@ const T = {
     s3kicker: "03 — A delay does not harm the investment",
     s3h2: "The appreciation of a central hub",
     s3p: 'Any delay in carrying out the development, due to the time the reparcelling process takes to conclude, does not harm the investment already made. On the contrary: the accelerated development of the whole northern area contributes to the appreciation of this central hub, which has become a prime infill site, kernel, surrounded by the adjoining developments and main transport routes.',
+    s4kicker: "04 — Current prices",
+    s4h2: "Current price of the land on offer",
+    s4p: "At the Sector's current stage of development, the land on offer is priced from €400 per gross square metre.",
+    s4stat: "€400/m²",
+    s4statL: "Gross land price, from",
   },
 };
 
@@ -139,6 +149,18 @@ export default function OfertaTerrenoPage({ params }: { params: { locale: string
           <p className="section-kicker mono">{t.s3kicker}</p>
           <h2>{t.s3h2}</h2>
           <p>{t.s3p}</p>
+        </section>
+
+        <section className="section">
+          <p className="section-kicker mono">{t.s4kicker}</p>
+          <h2>{t.s4h2}</h2>
+          <p>{t.s4p}</p>
+          <div className="stat-grid">
+            <div className="stat-card">
+              <div className="n">{t.s4stat}</div>
+              <div className="l">{t.s4statL}</div>
+            </div>
+          </div>
         </section>
 
         <SectionNav locale={locale} current={PATH} />
