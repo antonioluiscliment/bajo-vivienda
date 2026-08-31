@@ -14,7 +14,6 @@ const T = {
     stat2n: "234.120 m²",
     stat2l: "Edificabilidad (uso Servicios)",
     stat3l: "Autovía de Alicante",
-    imgTag: "Entorno · Sector ZP-Pn5",
   },
   en: {
     eyebrow: "Sector ZP-Pn5 · PGOU record no. 44",
@@ -28,7 +27,6 @@ const T = {
     stat2n: "234,120 m²",
     stat2l: "Buildable floor area (Services use)",
     stat3l: "A-7 motorway (Autovía de Alicante)",
-    imgTag: "Surroundings · Sector ZP-Pn5",
   },
 };
 
@@ -126,7 +124,6 @@ export default function Hero({ locale }: { locale: Locale }) {
           <div className="hero-visual-image">
             <HeroMotion slides={HERO_SLIDES[locale]} priority />
           </div>
-          <span className="hero-visual-tag mono">{t.imgTag}</span>
         </div>
       </div>
     </section>
