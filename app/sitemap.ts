@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/site";
 import { locales, alternateLanguages } from "@/lib/i18n";
+import { NEWS } from "@/lib/news";
 
 const ROUTES: { path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"] }[] = [
   { path: "/", priority: 1.0, changeFrequency: "weekly" },
@@ -11,6 +12,7 @@ const ROUTES: { path: string; priority: number; changeFrequency: MetadataRoute.S
   { path: "/propiedad-urbanizacion", priority: 0.6, changeFrequency: "monthly" },
   { path: "/proyecto-reparcelacion", priority: 0.6, changeFrequency: "monthly" },
   { path: "/oferta-terreno", priority: 0.9, changeFrequency: "weekly" },
+  { path: "/noticias", priority: 0.7, changeFrequency: "weekly" },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -26,6 +28,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified,
         changeFrequency: route.changeFrequency,
         priority: route.priority,
+        alternates: { languages },
+      });
+    }
+  }
+
+  for (const item of NEWS) {
+    const path = `/noticias/${item.slug}`;
+    const languages = alternateLanguages(path);
+    const itemLastModified = new Date(`${item.date}T00:00:00Z`);
+    for (const locale of locales) {
+      entries.push({
+        url: `${SITE_URL}/${locale}${path}`,
+        lastModified: itemLastModified,
+        changeFrequency: "monthly",
+        priority: 0.5,
         alternates: { languages },
       });
     }
