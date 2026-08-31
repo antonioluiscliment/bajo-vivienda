@@ -18,7 +18,8 @@ const NAV_ITEMS: Record<Locale, NavItem[]> = {
     { num: "L.06", label: "Propiedad y planos de urbanización", href: "/propiedad-urbanizacion", soon: false },
     { num: "L.07", label: "Proyecto de reparcelación", href: "/proyecto-reparcelacion", soon: false },
     { num: "L.08", label: "Oferta de terreno", href: "/oferta-terreno", soon: false },
-    { num: "L.09", label: "Contacto", href: "#", soon: true },
+    { num: "L.09", label: "Noticias", href: "/noticias", soon: false },
+    { num: "L.10", label: "Contacto", href: "#", soon: true },
   ],
   en: [
     { num: "L.00", label: "Home", href: "/", soon: false },
@@ -30,7 +31,8 @@ const NAV_ITEMS: Record<Locale, NavItem[]> = {
     { num: "L.06", label: "Ownership & development plans", href: "/propiedad-urbanizacion", soon: false },
     { num: "L.07", label: "Reparcelling project (reparcelación)", href: "/proyecto-reparcelacion", soon: false },
     { num: "L.08", label: "Land for sale", href: "/oferta-terreno", soon: false },
-    { num: "L.09", label: "Contact", href: "#", soon: true },
+    { num: "L.09", label: "News", href: "/noticias", soon: false },
+    { num: "L.10", label: "Contact", href: "#", soon: true },
   ],
 };
 
