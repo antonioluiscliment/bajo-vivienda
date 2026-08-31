@@ -448,18 +448,6 @@ img {
     animation: none;
   }
 }
-.hero-visual-tag {
-  position: absolute;
-  bottom: -1px;
-  right: -1px;
-  background: var(--ink);
-  color: var(--cream);
-  font-family: var(--font-plex-mono), monospace;
-  font-size: 0.66rem;
-  letter-spacing: 0.08em;
-  padding: 0.4rem 0.7rem;
-  z-index: 4;
-}
 .hero-visual-corner {
   position: absolute;
   top: -14px;
