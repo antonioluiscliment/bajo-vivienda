@@ -12,6 +12,7 @@ const ALL_SECTIONS: Record<Locale, Section[]> = {
     { num: "L.06", label: "Propiedad y planos de urbanización", href: "/propiedad-urbanizacion" },
     { num: "L.07", label: "Proyecto de reparcelación", href: "/proyecto-reparcelacion" },
     { num: "L.08", label: "Oferta de terreno", href: "/oferta-terreno" },
+    { num: "L.09", label: "Noticias", href: "/noticias" },
   ],
   en: [
     { num: "L.02", label: "Uses & investment", href: "/inversion" },
@@ -21,6 +22,7 @@ const ALL_SECTIONS: Record<Locale, Section[]> = {
     { num: "L.06", label: "Ownership & development plans", href: "/propiedad-urbanizacion" },
     { num: "L.07", label: "Reparcelling project", href: "/proyecto-reparcelacion" },
     { num: "L.08", label: "Land for sale", href: "/oferta-terreno" },
+    { num: "L.09", label: "News", href: "/noticias" },
   ],
 };
 
