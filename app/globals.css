@@ -1099,3 +1099,82 @@ footer {
   font-size: 0.92rem;
   line-height: 1.55;
 }
+/* ---------- News list (noticias) ---------- */
+.news-list {
+  display: grid;
+  gap: 1.8rem;
+  margin: 0.4rem 0 1.6rem;
+}
+.news-card {
+  padding-bottom: 1.8rem;
+  border-bottom: 1px dashed var(--line);
+}
+.news-card:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.news-card h2 {
+  margin: 0.3rem 0 0.6rem;
+  font-family: var(--font-archivo-expanded), sans-serif;
+  font-stretch: expanded;
+  font-weight: 900;
+  font-size: 1.3rem;
+  line-height: 1.2;
+}
+.news-card h2 a {
+  color: var(--ink);
+  text-decoration: none;
+}
+.news-card h2 a:hover {
+  color: var(--terracotta-deep);
+}
+.news-card > p {
+  max-width: 68ch;
+  color: var(--ink-soft);
+  line-height: 1.65;
+  margin-bottom: 0.8rem;
+}
+.news-date {
+  font-family: var(--font-plex-mono), monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.news-readmore {
+  font-family: var(--font-plex-mono), monospace;
+  font-size: 0.75rem;
+  color: var(--terracotta-deep);
+  text-decoration: none;
+}
+.news-readmore:hover {
+  text-decoration: underline;
+}
+
+/* ---------- News detail: relation-to-sector callout & related links ---------- */
+.news-relation {
+  margin: 1.8rem 0;
+  padding: 1.2rem 1.4rem;
+  border-left: 2px solid var(--terracotta);
+  background: var(--cream-2);
+}
+.news-relation-title {
+  font-family: var(--font-archivo-expanded), sans-serif;
+  font-stretch: expanded;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+.news-relation p:not(.news-relation-title) {
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+.news-related {
+  margin-top: 0.8rem;
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+}
+.news-related a {
+  color: var(--teal);
+  text-decoration: underline;
+}
