@@ -448,6 +448,24 @@ img {
     animation: none;
   }
 }
+.hero-visual-tag {
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  background: var(--ink);
+  color: var(--cream);
+  font-family: var(--font-plex-mono), monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  padding: 0.45rem 0.8rem;
+  z-index: 4;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+.hero-visual-tag:hover,
+.hero-visual-tag:focus-visible {
+  background: var(--terracotta-deep);
+}
 .hero-visual-corner {
   position: absolute;
   top: -14px;
