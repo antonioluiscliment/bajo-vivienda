@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Archivo, IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "../globals.css";
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from "@/lib/site";
 import {
@@ -104,6 +105,16 @@ export function generateMetadata({
   const name = SITE_NAME[locale];
   const description = SITE_DESCRIPTION[locale];
 
+  const googleVerification = process.env.GOOGLE_SITE_VERIFICATION;
+  const bingVerification = process.env.BING_SITE_VERIFICATION;
+  const verification: Metadata["verification"] =
+    googleVerification || bingVerification
+      ? {
+          ...(googleVerification ? { google: googleVerification } : {}),
+          ...(bingVerification ? { other: { "msvalidate.01": bingVerification } } : {}),
+        }
+      : undefined;
+
   return {
     metadataBase: new URL(SITE_URL),
     title: {
@@ -121,6 +132,7 @@ export function generateMetadata({
       index: true,
       follow: true,
     },
+    ...(verification ? { verification } : {}),
     openGraph: {
       type: "website",
       locale: OG_LOCALE[locale],
@@ -207,6 +219,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         {children}
+        <Analytics />
       </body>
     </html>
   );
