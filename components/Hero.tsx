@@ -14,6 +14,7 @@ const T = {
     stat2n: "234.120 m²",
     stat2l: "Edificabilidad (uso Servicios)",
     stat3l: "Autovía de Alicante",
+    priceTag: "Desde 400 €/m²",
   },
   en: {
     eyebrow: "Sector ZP-Pn5 · PGOU record no. 44",
@@ -27,6 +28,7 @@ const T = {
     stat2n: "234,120 m²",
     stat2l: "Buildable floor area (Services use)",
     stat3l: "A-7 motorway (Autovía de Alicante)",
+    priceTag: "From €400/m²",
   },
 };
 
@@ -124,6 +126,12 @@ export default function Hero({ locale }: { locale: Locale }) {
           <div className="hero-visual-image">
             <HeroMotion slides={HERO_SLIDES[locale]} priority />
           </div>
+          <a
+            className="hero-visual-tag mono"
+            href={localeHref(locale, "/oferta-terreno")}
+          >
+            {t.priceTag}
+          </a>
         </div>
       </div>
     </section>
