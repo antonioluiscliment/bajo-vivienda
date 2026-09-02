@@ -68,6 +68,15 @@ const T = {
     s4p: "En el actual estado de desarrollo del Sector, la oferta de terreno tiene un precio por metro cuadrado bruto desde 400 €.",
     s4stat: "400 €/m²",
     s4statL: "Precio bruto de suelo, desde",
+    s5kicker: "05 — Opción de compra",
+    s5h2: "Opción de compra sobre el precio fijado",
+    s5p: "Además de la venta directa, cabe negociar una opción de compra sobre el conjunto de parcelas, manteniendo fijo el precio de venta en 400 €/m² durante todo el tiempo de vigencia de la opción. El precio de esa opción equivale a aplicar el Euríbor sobre el precio de venta: con el Euríbor situado actualmente en torno al 3%, resulta en 12 €/m² al año.",
+    s5stat1: "12 €/m² al año",
+    s5stat1L: "Precio orientativo de la opción (Euríbor ≈ 3%)",
+    s5stat2: "400 €/m²",
+    s5stat2L: "Precio de venta, fijo durante la opción",
+    s5note:
+      "Al tratarse de una referencia ligada al Euríbor, el importe de la opción se actualizaría si varía de forma significativa el tipo de referencia en el momento de cerrar el acuerdo.",
   },
   en: {
     eyebrow: "Sector ZP-Pn5 · Land for Sale",
@@ -90,12 +99,21 @@ const T = {
       "The northern area of Murcia is undergoing major residential expansion, and the vacant spaces towards the city are nearing the end of their development. A case in point is the sports complex under construction to the north (north-east) of Plaza de los Cubos, on Avenida de Juan de Borbón.",
     s3kicker: "03 — A delay does not harm the investment",
     s3h2: "The appreciation of a central hub",
-    s3p: 'Any delay in carrying out the development, due to the time the reparcelling process takes to conclude, does not harm the investment already made. On the contrary: the accelerated development of the whole northern area contributes to the appreciation of this central hub, which has become a prime infill site, kernel, surrounded by the adjoining developments and main transport routes.',
+    s3p: 'Any delay in carrying out the development, due to the time the reparcelling process takes to conclude, does not harm the investment already made. On the contrary: the accelerated development of the whole northern area contributes to the appreciation of this central hub, which has become a prime infill site ("almendra") surrounded by the adjoining developments and main transport routes.',
     s4kicker: "04 — Current prices",
     s4h2: "Current price of the land on offer",
     s4p: "At the Sector's current stage of development, the land on offer is priced from €400 per gross square metre.",
     s4stat: "€400/m²",
     s4statL: "Gross land price, from",
+    s5kicker: "05 — Purchase option",
+    s5h2: "A purchase option on the agreed price",
+    s5p: "Besides an outright sale, a purchase option (opción de compra) can also be negotiated on the group of plots, keeping the sale price fixed at €400/m² for the whole term of the option. The price of that option is equivalent to applying the Euríbor rate to the sale price: with the Euríbor currently at around 3%, that works out at €12/m² per year.",
+    s5stat1: "€12/m² per year",
+    s5stat1L: "Indicative option price (Euríbor ≈ 3%)",
+    s5stat2: "€400/m²",
+    s5stat2L: "Sale price, fixed for the option term",
+    s5note:
+      "As this reference is tied to the Euríbor, the option's amount would be updated if the reference rate changes significantly by the time the agreement is signed.",
   },
 };
 
@@ -161,6 +179,23 @@ export default function OfertaTerrenoPage({ params }: { params: { locale: string
               <div className="l">{t.s4statL}</div>
             </div>
           </div>
+        </section>
+
+        <section className="section">
+          <p className="section-kicker mono">{t.s5kicker}</p>
+          <h2>{t.s5h2}</h2>
+          <p>{t.s5p}</p>
+          <div className="stat-grid">
+            <div className="stat-card">
+              <div className="n">{t.s5stat1}</div>
+              <div className="l">{t.s5stat1L}</div>
+            </div>
+            <div className="stat-card">
+              <div className="n">{t.s5stat2}</div>
+              <div className="l">{t.s5stat2L}</div>
+            </div>
+          </div>
+          <p className="section-source">{t.s5note}</p>
         </section>
 
         <SectionNav locale={locale} current={PATH} />
