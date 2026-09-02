@@ -181,7 +181,7 @@ export const NEWS: NewsItem[] = [
     sourceName: "Ministerio de Transportes y Movilidad Sostenible",
     sourceUrl:
       "https://www.transportes.gob.es/ministerio/comunicacion/sala-prensa/jue-25062026-1155",
-    mapQuery: "38.065,-1.125",
+    mapQuery: "38.024774,-1.147458",
     mapZoom: 10,
     mapImage: "/assets/arco-norte-tramo-b-mapa.jpg",
     content: {
