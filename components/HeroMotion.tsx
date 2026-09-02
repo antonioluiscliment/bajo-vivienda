@@ -24,12 +24,17 @@ export type MotionSlide = {
 export default function HeroMotion({
   slides,
   priority,
+  onCycleComplete,
 }: {
   slides: MotionSlide[];
   priority?: boolean;
+  /** Called each time the sequence wraps back to the first slide, i.e. once per full pass through `slides`. */
+  onCycleComplete?: () => void;
 }) {
   const [active, setActive] = useState(0);
   const reducedMotionRef = useRef(false);
+  const onCycleCompleteRef = useRef(onCycleComplete);
+  onCycleCompleteRef.current = onCycleComplete;
 
   useEffect(() => {
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -41,7 +46,13 @@ export default function HeroMotion({
 
     let cancelled = false;
     const timer = setTimeout(() => {
-      if (!cancelled) setActive((i) => (i + 1) % slides.length);
+      if (!cancelled) {
+        setActive((i) => {
+          const next = (i + 1) % slides.length;
+          if (next === 0) onCycleCompleteRef.current?.();
+          return next;
+        });
+      }
     }, slides[active].durationMs);
 
     return () => {
