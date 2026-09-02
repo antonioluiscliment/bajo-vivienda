@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -66,6 +67,9 @@ const T = {
     source: "Fuente:",
     related: "Relacionado en esta web:",
     back: "← Volver a Noticias",
+    enlarge: "Ampliar ↗",
+    mapLocatorTitle: "Localización del Sector ZP-Pn5",
+    mapLocatorCaption: "Mapa interactivo del entorno del Sector.",
   },
   en: {
     eyebrow: "Sector ZP-Pn5 · News",
@@ -73,6 +77,9 @@ const T = {
     source: "Source:",
     related: "Related on this site:",
     back: "← Back to News",
+    enlarge: "Enlarge ↗",
+    mapLocatorTitle: "Location of Sector ZP-Pn5",
+    mapLocatorCaption: "Interactive map of the Sector's surroundings.",
   },
 };
 
@@ -146,15 +153,54 @@ export default function NewsDetailPage({
             <p>{c.relationBody}</p>
           </div>
 
-          <figure className="content-figure content-figure-map">
-            <iframe
-              src={`https://www.google.com/maps?q=${item.mapQuery}&z=${item.mapZoom}&output=embed`}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title={c.mapCaption}
-            />
-            <figcaption>{c.mapCaption}</figcaption>
-          </figure>
+          {item.mapImage ? (
+            <div className="figure-row figure-row-compare">
+              <figure className="content-figure content-figure-map content-figure-compare">
+                <a href={item.mapImage} target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src={item.mapImage}
+                    alt={c.mapImageAlt ?? c.mapCaption}
+                    width={900}
+                    height={501}
+                  />
+                </a>
+                <figcaption>
+                  {c.mapCaption}{" "}
+                  <a href={item.mapImage} target="_blank" rel="noopener noreferrer">
+                    {t.enlarge}
+                  </a>
+                </figcaption>
+              </figure>
+              <figure className="content-figure content-figure-map content-figure-compare">
+                <iframe
+                  src={`https://www.google.com/maps?q=${item.mapQuery}&z=${item.mapZoom}&output=embed`}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title={t.mapLocatorTitle}
+                />
+                <figcaption>
+                  {t.mapLocatorCaption}{" "}
+                  <a
+                    href={`https://www.google.com/maps?q=${item.mapQuery}&z=${item.mapZoom}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {t.enlarge}
+                  </a>
+                </figcaption>
+              </figure>
+            </div>
+          ) : (
+            <figure className="content-figure content-figure-map">
+              <iframe
+                src={`https://www.google.com/maps?q=${item.mapQuery}&z=${item.mapZoom}&output=embed`}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title={c.mapCaption}
+              />
+              <figcaption>{c.mapCaption}</figcaption>
+            </figure>
+          )}
 
           <p className="section-source">
             {t.source}{" "}
