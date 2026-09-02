@@ -7,6 +7,8 @@ export type NewsLocaleContent = {
   relationTitle: string;
   relationBody: string;
   mapCaption: string;
+  /** Alt text for `mapImage`, when set. Falls back to `mapCaption` if omitted. */
+  mapImageAlt?: string;
   relatedLinks: { label: string; href: string }[];
 };
 
@@ -21,6 +23,8 @@ export type NewsItem = {
   /** "lat,lon" for the Google Maps embed. */
   mapQuery: string;
   mapZoom: number;
+  /** Optional local image path (e.g. an official map graphic) shown instead of the Google Maps embed. */
+  mapImage?: string;
   content: Record<Locale, NewsLocaleContent>;
 };
 
@@ -179,6 +183,7 @@ export const NEWS: NewsItem[] = [
       "https://www.transportes.gob.es/ministerio/comunicacion/sala-prensa/jue-25062026-1155",
     mapQuery: "38.038,-1.150",
     mapZoom: 13,
+    mapImage: "/assets/arco-norte-tramo-b-mapa.jpg",
     content: {
       es: {
         title: "Adjudicadas por 84,2 millones las obras del primer tramo del Arco Norte de Murcia",
@@ -193,7 +198,9 @@ export const NEWS: NewsItem[] = [
         relationBody:
           "El trazado actual de la A-7 discurre justo junto al límite Norte del Sector ZP-Pn5, y es hoy la vía por la que circula indistintamente tanto el tráfico de paso entre Andalucía y el Levante como el que accede a Murcia y a su entorno más próximo, incluido El Puntal. Con la entrada en servicio del Arco Norte, ese tráfico de largo recorrido se desviará por el nuevo bypass, situado algo más al Norte, aliviando de presión el tramo de la A-7 junto al Sector. En la práctica, ese tramo pasará a funcionar principalmente como vía de acceso a Murcia a través del entorno del Sector, en lugar de como corredor de paso saturado —una transformación que refuerza tanto la accesibilidad como el atractivo del Sector para los usos terciarios, logísticos y comerciales previstos.",
         mapCaption:
-          "Trazado previsto del tramo B del Arco Norte de Murcia, entre el enlace de la MU-32 y la A-7 a la altura de Cabezo de Torres. El Sector ZP-Pn5 se sitúa junto al trazado actual de la A-7, algo más al Sur de este nuevo bypass.",
+          "Trazado del tramo B del Arco Norte de Murcia, entre el enlace de la MU-32 y la A-7 a la altura de Cabezo de Torres. El Sector ZP-Pn5 se sitúa junto al trazado actual de la A-7, algo más al Sur de este nuevo bypass. (Fuente: Ministerio de Transportes y Movilidad Sostenible)",
+        mapImageAlt:
+          "Mapa oficial del Ministerio de Transportes con el trazado del tramo B del Arco Norte de Murcia, entre Molina de Segura/Las Torres de Cotillas y el enlace de Cabezo de Torres con la A-7",
         relatedLinks: [
           { label: "Conectividad y accesos", href: "/conectividad" },
           { label: "Usos e inversión", href: "/inversion" },
@@ -212,7 +219,9 @@ export const NEWS: NewsItem[] = [
         relationBody:
           "The current A-7 corridor runs right along the northern boundary of Sector ZP-Pn5, and today carries both long-distance through-traffic between Andalucía and the Levante and traffic accessing Murcia and its immediate surroundings, including El Puntal. Once the Arco Norte opens, that long-distance traffic will shift to the new bypass, a little further north, easing pressure on the stretch of the A-7 next to the Sector. In practice, that stretch will come to function mainly as the access route into Murcia through the Sector's surroundings, rather than as a congested through-corridor — a shift that reinforces both the accessibility and the appeal of the Sector for its planned tertiary, logistics and retail uses.",
         mapCaption:
-          "Planned route of tramo B of the Arco Norte de Murcia ring road, between the MU-32 junction and the A-7 at Cabezo de Torres. Sector ZP-Pn5 sits along the current A-7 corridor, just south of this new bypass.",
+          "Route of tramo B of the Arco Norte de Murcia ring road, between the MU-32 junction and the A-7 at Cabezo de Torres. Sector ZP-Pn5 sits along the current A-7 corridor, just south of this new bypass. (Source: Ministry of Transport and Sustainable Mobility)",
+        mapImageAlt:
+          "Official Ministry of Transport map showing the route of tramo B of the Arco Norte de Murcia, between Molina de Segura/Las Torres de Cotillas and the Cabezo de Torres junction with the A-7",
         relatedLinks: [
           { label: "Connectivity & access", href: "/conectividad" },
           { label: "Uses & investment", href: "/inversion" },
