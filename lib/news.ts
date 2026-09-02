@@ -171,6 +171,55 @@ export const NEWS: NewsItem[] = [
       },
     },
   },
+  {
+    slug: "arco-norte-murcia-adjudicacion-tramo-b",
+    date: "2026-06-25",
+    sourceName: "Ministerio de Transportes y Movilidad Sostenible",
+    sourceUrl:
+      "https://www.transportes.gob.es/ministerio/comunicacion/sala-prensa/jue-25062026-1155",
+    mapQuery: "38.038,-1.150",
+    mapZoom: 13,
+    content: {
+      es: {
+        title: "Adjudicadas por 84,2 millones las obras del primer tramo del Arco Norte de Murcia",
+        excerpt:
+          "El Ministerio adjudica por 84,2 millones de euros el primer tramo del Arco Norte de Murcia, el bypass que desviará el tráfico de paso entre Andalucía y el Levante lejos del entorno del Sector.",
+        body: [
+          "El Ministerio de Transportes y Movilidad Sostenible ha adjudicado por unos 84,19 millones de euros (IVA incluido) las obras del primer tramo del Arco Norte de Murcia: el tramo B, de 8,3 kilómetros, entre el kilómetro 652 de la autovía A-7 y el enlace del Cabezo de Torres. Según recogió La Opinión de Murcia, la ejecución correrá a cargo de FCC y Pavasal.",
+          "El nuevo tramo arrancará en un enlace situado en el kilómetro 4 de la autovía MU-32 y desembocará mediante una confluencia en la A-7, a la altura del enlace de Cabezo de Torres. El proyecto contempla la construcción de 13 nuevas estructuras —tres viaductos, cuatro pasos superiores y seis pasos inferiores—, mientras el Ministerio trabaja todavía en la actualización técnica y económica del segundo tramo (tramo A).",
+          "El objetivo declarado es separar el tráfico de largo recorrido entre Andalucía y el Levante (Alicante y Valencia) del tráfico de agitación urbana que satura hoy el entorno del Nudo de Espinardo —por el que circulan más de 125.000 vehículos al día— y la Ronda Oeste de Murcia. El Arco Norte completará así, junto al Arco Noroeste —operativo desde julio de 2025 y marzo de 2026, con una inversión de 264 millones de euros, y que según La Opinión de Murcia ya ha reducido más de la mitad de las retenciones en los puntos más conflictivos del área metropolitana—, la circunvalación de la ciudad por el Norte.",
+        ],
+        relationTitle: "¿Qué relación tiene con el Sector ZP-Pn5?",
+        relationBody:
+          "El trazado actual de la A-7 discurre justo junto al límite Norte del Sector ZP-Pn5, y es hoy la vía por la que circula indistintamente tanto el tráfico de paso entre Andalucía y el Levante como el que accede a Murcia y a su entorno más próximo, incluido El Puntal. Con la entrada en servicio del Arco Norte, ese tráfico de largo recorrido se desviará por el nuevo bypass, situado algo más al Norte, aliviando de presión el tramo de la A-7 junto al Sector. En la práctica, ese tramo pasará a funcionar principalmente como vía de acceso a Murcia a través del entorno del Sector, en lugar de como corredor de paso saturado —una transformación que refuerza tanto la accesibilidad como el atractivo del Sector para los usos terciarios, logísticos y comerciales previstos.",
+        mapCaption:
+          "Trazado previsto del tramo B del Arco Norte de Murcia, entre el enlace de la MU-32 y la A-7 a la altura de Cabezo de Torres. El Sector ZP-Pn5 se sitúa junto al trazado actual de la A-7, algo más al Sur de este nuevo bypass.",
+        relatedLinks: [
+          { label: "Conectividad y accesos", href: "/conectividad" },
+          { label: "Usos e inversión", href: "/inversion" },
+        ],
+      },
+      en: {
+        title: "First stretch of the Arco Norte de Murcia ring road awarded for €84.2 million",
+        excerpt:
+          "The Ministry awards the €84.2 million contract for the first stretch of the Arco Norte de Murcia bypass, which will divert Andalucía–Levante through-traffic away from the Sector's surroundings.",
+        body: [
+          "Spain's Ministry of Transport and Sustainable Mobility has awarded a contract worth around €84.19 million (VAT included) for the works on the first stretch of the Arco Norte de Murcia ring road: tramo B, 8.3 kilometres long, between kilometre 652 of the A-7 motorway and the Cabezo de Torres junction. According to La Opinión de Murcia, the works will be carried out by FCC and Pavasal.",
+          "The new stretch will begin at a junction at kilometre 4 of the MU-32 motorway and end with a confluence onto the A-7 at the Cabezo de Torres junction. The project includes 13 new structures — three viaducts, four overpasses and six underpasses — while the Ministry is still working on the technical and financial update of the second stretch (tramo A).",
+          "The stated aim is to separate long-distance through-traffic between Andalucía and the Levante (Alicante and Valencia provinces) from the urban congestion that today saturates the Nudo de Espinardo interchange — used by more than 125,000 vehicles a day — and Murcia's Ronda Oeste ring road. Together with the Arco Noroeste — operational since July 2025 and March 2026, built with a €264 million investment, and which according to La Opinión de Murcia has already cut tailbacks by more than half at the metropolitan area's most congested points — the Arco Norte will complete the city's northern bypass.",
+        ],
+        relationTitle: "How does this relate to Sector ZP-Pn5?",
+        relationBody:
+          "The current A-7 corridor runs right along the northern boundary of Sector ZP-Pn5, and today carries both long-distance through-traffic between Andalucía and the Levante and traffic accessing Murcia and its immediate surroundings, including El Puntal. Once the Arco Norte opens, that long-distance traffic will shift to the new bypass, a little further north, easing pressure on the stretch of the A-7 next to the Sector. In practice, that stretch will come to function mainly as the access route into Murcia through the Sector's surroundings, rather than as a congested through-corridor — a shift that reinforces both the accessibility and the appeal of the Sector for its planned tertiary, logistics and retail uses.",
+        mapCaption:
+          "Planned route of tramo B of the Arco Norte de Murcia ring road, between the MU-32 junction and the A-7 at Cabezo de Torres. Sector ZP-Pn5 sits along the current A-7 corridor, just south of this new bypass.",
+        relatedLinks: [
+          { label: "Connectivity & access", href: "/conectividad" },
+          { label: "Uses & investment", href: "/inversion" },
+        ],
+      },
+    },
+  },
 ];
 
 export function getNewsSorted(): NewsItem[] {
