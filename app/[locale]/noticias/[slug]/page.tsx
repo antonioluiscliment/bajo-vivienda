@@ -173,7 +173,7 @@ export default function NewsDetailPage({
               </figure>
               <figure className="content-figure content-figure-map content-figure-compare">
                 <iframe
-                  src={`https://www.google.com/maps?q=${item.mapQuery}&z=${item.mapZoom}&output=embed`}
+                  src={`https://www.google.com/maps/@${item.mapQuery},${item.mapZoom}z?output=embed`}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   title={t.mapLocatorTitle}
@@ -181,7 +181,7 @@ export default function NewsDetailPage({
                 <figcaption>
                   {t.mapLocatorCaption}{" "}
                   <a
-                    href={`https://www.google.com/maps?q=${item.mapQuery}&z=${item.mapZoom}`}
+                    href={`https://www.google.com/maps/@${item.mapQuery},${item.mapZoom}z`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
