@@ -1,4 +1,5 @@
-import HeroMotion, { type MotionSlide } from "./HeroMotion";
+import HeroVisual from "./HeroVisual";
+import { type MotionSlide } from "./HeroMotion";
 import { localeHref, type Locale } from "@/lib/i18n";
 
 const T = {
@@ -15,6 +16,7 @@ const T = {
     stat2l: "Edificabilidad (uso Servicios)",
     stat3l: "Autovía de Alicante",
     priceTag: "Desde 400 €/m²",
+    optionTag: "Desde 12 €/m² la opción",
   },
   en: {
     eyebrow: "Sector ZP-Pn5 · PGOU record no. 44",
@@ -29,6 +31,7 @@ const T = {
     stat2l: "Buildable floor area (Services use)",
     stat3l: "A-7 motorway (Autovía de Alicante)",
     priceTag: "From €400/m²",
+    optionTag: "From €12/m² (option)",
   },
 };
 
@@ -121,18 +124,12 @@ export default function Hero({ locale }: { locale: Locale }) {
       </div>
 
       <div className="hero-visual">
-        <div className="hero-visual-frame">
-          <div className="hero-visual-corner" />
-          <div className="hero-visual-image">
-            <HeroMotion slides={HERO_SLIDES[locale]} priority />
-          </div>
-          <a
-            className="hero-visual-tag mono"
-            href={localeHref(locale, "/oferta-terreno")}
-          >
-            {t.priceTag}
-          </a>
-        </div>
+        <HeroVisual
+          locale={locale}
+          slides={HERO_SLIDES[locale]}
+          priceTag={t.priceTag}
+          optionTag={t.optionTag}
+        />
       </div>
     </section>
   );
