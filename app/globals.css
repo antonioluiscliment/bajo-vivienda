@@ -965,6 +965,21 @@ footer {
 .content-figure-map {
   max-width: 420px;
 }
+.figure-row-compare {
+  align-items: flex-start;
+}
+.content-figure-compare {
+  max-width: 340px;
+  flex: 1 1 300px;
+}
+.content-figure-compare a {
+  display: block;
+  line-height: 0;
+}
+.content-figure figcaption a {
+  color: var(--teal);
+  white-space: nowrap;
+}
 .content-figure figcaption {
   margin-top: 0.7rem;
   font-family: var(--font-plex-mono), monospace;
