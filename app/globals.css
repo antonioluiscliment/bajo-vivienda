@@ -1121,7 +1121,8 @@ footer {
   text-transform: uppercase;
   color: var(--ink-soft);
 }
-.form-field input {
+.form-field input,
+.form-field textarea {
   padding: 0.8rem 0.9rem;
   border: 1.5px solid var(--ink);
   background: var(--white);
@@ -1129,10 +1130,17 @@ footer {
   font-size: 0.96rem;
   color: var(--ink);
 }
-.form-field input::placeholder {
+.form-field textarea {
+  resize: vertical;
+  min-height: 6.5rem;
+  line-height: 1.5;
+}
+.form-field input::placeholder,
+.form-field textarea::placeholder {
   color: var(--concrete);
 }
-.form-field input:focus-visible {
+.form-field input:focus-visible,
+.form-field textarea:focus-visible {
   outline: 2px solid var(--terracotta);
   outline-offset: 1px;
 }
