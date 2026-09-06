@@ -18,6 +18,7 @@ const T = {
       role: "Cargo / puesto de trabajo",
       email: "Email de contacto",
       phone: "Teléfono",
+      message: "Comentario (opcional)",
     },
     placeholders: {
       name: "Nombre completo",
@@ -25,6 +26,7 @@ const T = {
       role: "Cargo en la empresa",
       email: "nombre@empresa.com",
       phone: "+34 600 000 000",
+      message: "Cualquier observación o pregunta que quieras añadir",
     },
     submit: "Enviar consulta →",
     note: "Al enviar, se abrirá tu programa de correo con un mensaje ya redactado dirigido a contacto@nortemurcia.com. Solo tienes que confirmar el envío.",
@@ -40,6 +42,7 @@ const T = {
       role: "Job title / position",
       email: "Contact email",
       phone: "Phone number",
+      message: "Message (optional)",
     },
     placeholders: {
       name: "Full name",
@@ -47,6 +50,7 @@ const T = {
       role: "Your role at the company",
       email: "name@company.com",
       phone: "+1 000 000 0000",
+      message: "Any remarks or questions you'd like to add",
     },
     submit: "Send enquiry →",
     note: "Submitting opens your email application with a pre-filled message addressed to contacto@nortemurcia.com. You just need to confirm and send it.",
@@ -62,9 +66,10 @@ type Values = {
   role: string;
   email: string;
   phone: string;
+  message: string;
 };
 
-const EMPTY: Values = { name: "", company: "", role: "", email: "", phone: "" };
+const EMPTY: Values = { name: "", company: "", role: "", email: "", phone: "", message: "" };
 
 export default function ContactForm({ locale }: { locale: Locale }) {
   const t = T[locale];
@@ -72,7 +77,7 @@ export default function ContactForm({ locale }: { locale: Locale }) {
   const [sent, setSent] = useState(false);
 
   function update(field: keyof Values) {
-    return (e: React.ChangeEvent<HTMLInputElement>) =>
+    return (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
       setValues((v) => ({ ...v, [field]: e.target.value }));
   }
 
@@ -85,6 +90,7 @@ export default function ContactForm({ locale }: { locale: Locale }) {
       `${f.role}: ${values.role}`,
       `${f.email}: ${values.email}`,
       `${f.phone}: ${values.phone}`,
+      `${f.message}: ${values.message}`,
     ].join("\n");
     const mailto = `mailto:contacto@nortemurcia.com?subject=${encodeURIComponent(
       t.subject
@@ -159,6 +165,17 @@ export default function ContactForm({ locale }: { locale: Locale }) {
             onChange={update("phone")}
             placeholder={t.placeholders.phone}
             autoComplete="tel"
+          />
+        </div>
+        <div className="form-field">
+          <label htmlFor="cf-message">{t.fields.message}</label>
+          <textarea
+            id="cf-message"
+            name="message"
+            rows={4}
+            value={values.message}
+            onChange={update("message")}
+            placeholder={t.placeholders.message}
           />
         </div>
 
