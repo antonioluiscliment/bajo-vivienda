@@ -12,6 +12,7 @@ const T = {
       role: "Cargo / puesto de trabajo",
       email: "Email de contacto",
       phone: "Teléfono",
+      message: "Comentario (opcional)",
     },
     placeholders: {
       name: "Nombre completo",
@@ -19,6 +20,7 @@ const T = {
       role: "Cargo en la empresa",
       email: "nombre@empresa.com",
       phone: "+34 600 000 000",
+      message: "Cualquier observación o pregunta que quieras añadir",
     },
     submit: "Enviar solicitud →",
     note: "Al enviar, se abrirá tu programa de correo con un mensaje ya redactado dirigido a info@nortemurcia.com. Solo tienes que confirmar el envío.",
@@ -34,6 +36,7 @@ const T = {
       role: "Job title / position",
       email: "Contact email",
       phone: "Phone number",
+      message: "Message (optional)",
     },
     placeholders: {
       name: "Full name",
@@ -41,6 +44,7 @@ const T = {
       role: "Your role at the company",
       email: "name@company.com",
       phone: "+1 000 000 0000",
+      message: "Any remarks or questions you'd like to add",
     },
     submit: "Send request →",
     note: "Submitting opens your email application with a pre-filled message addressed to info@nortemurcia.com. You just need to confirm and send it.",
@@ -56,9 +60,10 @@ type Values = {
   role: string;
   email: string;
   phone: string;
+  message: string;
 };
 
-const EMPTY: Values = { name: "", company: "", role: "", email: "", phone: "" };
+const EMPTY: Values = { name: "", company: "", role: "", email: "", phone: "", message: "" };
 
 export default function DossierForm({ locale }: { locale: Locale }) {
   const t = T[locale];
@@ -66,7 +71,7 @@ export default function DossierForm({ locale }: { locale: Locale }) {
   const [sent, setSent] = useState(false);
 
   function update(field: keyof Values) {
-    return (e: React.ChangeEvent<HTMLInputElement>) =>
+    return (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
       setValues((v) => ({ ...v, [field]: e.target.value }));
   }
 
@@ -79,6 +84,7 @@ export default function DossierForm({ locale }: { locale: Locale }) {
       `${f.role}: ${values.role}`,
       `${f.email}: ${values.email}`,
       `${f.phone}: ${values.phone}`,
+      `${f.message}: ${values.message}`,
     ].join("\n");
     const mailto = `mailto:info@nortemurcia.com?subject=${encodeURIComponent(
       t.subject
@@ -153,6 +159,17 @@ export default function DossierForm({ locale }: { locale: Locale }) {
             onChange={update("phone")}
             placeholder={t.placeholders.phone}
             autoComplete="tel"
+          />
+        </div>
+        <div className="form-field">
+          <label htmlFor="df-message">{t.fields.message}</label>
+          <textarea
+            id="df-message"
+            name="message"
+            rows={4}
+            value={values.message}
+            onChange={update("message")}
+            placeholder={t.placeholders.message}
           />
         </div>
 
