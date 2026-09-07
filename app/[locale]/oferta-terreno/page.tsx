@@ -77,6 +77,15 @@ const T = {
     s5stat2L: "Precio de venta, fijo durante la opción",
     s5note:
       "Al tratarse de una referencia ligada al Euríbor, el importe de la opción se actualizaría si varía de forma significativa el tipo de referencia en el momento de cerrar el acuerdo.",
+    s6kicker: "06 — Opción de compra indexada al IPC",
+    s6h2: "Opción de compra sobre el precio actualizado por el IPC",
+    s6p: "Como alternativa a la opción ligada al Euríbor, cabe negociar una opción de compra cuya prima —el precio de la propia opción— equivale al 1% anual del precio inicial de venta, actualmente 4 €/m². El precio de ejercicio, es decir, el precio de venta del terreno, será de 400 €/m², actualizado por la variación del IPC desde la fecha de constitución de la opción hasta el momento de la venta efectiva.",
+    s6stat1: "4 €/m² al año",
+    s6stat1L: "Prima de la opción (1% anual sobre 400 €/m²)",
+    s6stat2: "400 €/m² + IPC",
+    s6stat2L: "Precio de ejercicio, actualizado por IPC desde la constitución",
+    s6note:
+      "Al tratarse de una referencia ligada al IPC, el precio de ejercicio se actualiza conforme a la variación acumulada del índice entre la fecha de constitución de la opción y la fecha de la venta efectiva.",
   },
   en: {
     eyebrow: "Sector ZP-Pn5 · Land for Sale",
@@ -114,6 +123,15 @@ const T = {
     s5stat2L: "Sale price, fixed for the option term",
     s5note:
       "As this reference is tied to the Euríbor, the option's amount would be updated if the reference rate changes significantly by the time the agreement is signed.",
+    s6kicker: "06 — CPI-indexed purchase option",
+    s6h2: "A purchase option on the CPI-updated price",
+    s6p: "As an alternative to the Euríbor-linked option, a purchase option can also be negotiated whose premium — the price of the option itself — is equivalent to 1% per year of the initial sale price, currently €4/m². The strike price, i.e. the land's sale price, will be €400/m², updated according to the change in the CPI (IPC) from the date the option is set up until the date of the effective sale.",
+    s6stat1: "€4/m² per year",
+    s6stat1L: "Option premium (1% per year on €400/m²)",
+    s6stat2: "€400/m² + CPI",
+    s6stat2L: "Strike price, updated by CPI since the option was set up",
+    s6note:
+      "As this reference is tied to the CPI (IPC), the strike price is updated according to the index's cumulative change between the date the option is set up and the date of the effective sale.",
   },
 };
 
@@ -196,6 +214,23 @@ export default function OfertaTerrenoPage({ params }: { params: { locale: string
             </div>
           </div>
           <p className="section-source">{t.s5note}</p>
+        </section>
+
+        <section className="section">
+          <p className="section-kicker mono">{t.s6kicker}</p>
+          <h2>{t.s6h2}</h2>
+          <p>{t.s6p}</p>
+          <div className="stat-grid">
+            <div className="stat-card">
+              <div className="n">{t.s6stat1}</div>
+              <div className="l">{t.s6stat1L}</div>
+            </div>
+            <div className="stat-card">
+              <div className="n">{t.s6stat2}</div>
+              <div className="l">{t.s6stat2L}</div>
+            </div>
+          </div>
+          <p className="section-source">{t.s6note}</p>
         </section>
 
         <SectionNav locale={locale} current={PATH} />
