@@ -16,7 +16,8 @@ const T = {
     stat2l: "Edificabilidad (uso Servicios)",
     stat3l: "Autovía de Alicante",
     priceTag: "Desde 400 €/m²",
-    optionTag: "Desde 12 €/m² la opción",
+    optionTag: "12 €/m² opción compra a 400 €/m²",
+    ipcTag: "4 €/m² opción en función del IPC",
   },
   en: {
     eyebrow: "Sector ZP-Pn5 · PGOU record no. 44",
@@ -31,7 +32,8 @@ const T = {
     stat2l: "Buildable floor area (Services use)",
     stat3l: "A-7 motorway (Autovía de Alicante)",
     priceTag: "From €400/m²",
-    optionTag: "From €12/m² (option)",
+    optionTag: "€12/m² purchase option at €400/m²",
+    ipcTag: "€4/m² option, CPI-indexed (IPC)",
   },
 };
 
@@ -127,8 +129,7 @@ export default function Hero({ locale }: { locale: Locale }) {
         <HeroVisual
           locale={locale}
           slides={HERO_SLIDES[locale]}
-          priceTag={t.priceTag}
-          optionTag={t.optionTag}
+          tags={[t.priceTag, t.optionTag, t.ipcTag]}
         />
       </div>
     </section>
