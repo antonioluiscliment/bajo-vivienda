@@ -15,9 +15,9 @@ const T = {
     stat2n: "234.120 m²",
     stat2l: "Edificabilidad (uso Servicios)",
     stat3l: "Autovía de Alicante",
-    priceTag: "Desde 400 €/m²",
-    optionTag: "12 €/m² opción compra a 400 €/m²",
-    ipcTag: "4 €/m² opción en función del IPC",
+    priceTag: "Desde 300 €/m²",
+    optionTag: "9 €/m² opción compra a 300 €/m²",
+    ipcTag: "3 €/m² opción en función del IPC",
   },
   en: {
     eyebrow: "Sector ZP-Pn5 · PGOU record no. 44",
@@ -31,9 +31,9 @@ const T = {
     stat2n: "234,120 m²",
     stat2l: "Buildable floor area (Services use)",
     stat3l: "A-7 motorway (Autovía de Alicante)",
-    priceTag: "From €400/m²",
-    optionTag: "€12/m² purchase option at €400/m²",
-    ipcTag: "€4/m² option, CPI-indexed (IPC)",
+    priceTag: "From €300/m²",
+    optionTag: "€9/m² purchase option at €300/m²",
+    ipcTag: "€3/m² option, CPI-indexed (IPC)",
   },
 };
 
