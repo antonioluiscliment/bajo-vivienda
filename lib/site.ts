@@ -13,10 +13,21 @@
  *    está configurado en el proyecto).
  * 3. VERCEL_URL — URL del despliegue actual (previews incluidos).
  * 4. http://localhost:3000 — desarrollo local.
+ *
+ * Nota de robustez: si NEXT_PUBLIC_SITE_URL se define sin esquema (p. ej.
+ * "nortemurcia.com" en vez de "https://nortemurcia.com"), `new URL(...)`
+ * más adelante (metadataBase, en el layout) lanzaría "Invalid URL" y
+ * tumbaría el build entero. `withScheme()` añade "https://" por delante
+ * si falta, para que un despiste al rellenar la variable en Vercel no
+ * rompa el despliegue.
  */
+function withScheme(url: string): string {
+  return /^https?:\/\//i.test(url) ? url : `https://${url}`;
+}
+
 function resolveSiteUrl(): string {
   if (process.env.NEXT_PUBLIC_SITE_URL) {
-    return process.env.NEXT_PUBLIC_SITE_URL.replace(/\/$/, "");
+    return withScheme(process.env.NEXT_PUBLIC_SITE_URL.replace(/\/$/, ""));
   }
   if (process.env.VERCEL_PROJECT_PRODUCTION_URL) {
     return `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`;
