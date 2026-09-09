@@ -116,7 +116,7 @@ const T = {
     s4statL: "Gross land price, from",
     s5kicker: "05 — Purchase option",
     s5h2: "A purchase option on the agreed price",
-    s5p: "Besides an outright sale, a purchase option (opción de compra) can also be negotiated on the group of plots, keeping the sale price fixed at €400/m² for the whole term of the option. The price of that option is equivalent to applying the Euríbor rate to the sale price: with the Euríbor currently at around 3%, that works out at €9/m² per year.",
+    s5p: "Besides an outright sale, a purchase option (opción de compra) can also be negotiated on the group of plots, keeping the sale price fixed at €300/m² for the whole term of the option. The price of that option is equivalent to applying the Euríbor rate to the sale price: with the Euríbor currently at around 3%, that works out at €9/m² per year.",
     s5stat1: "€9/m² per year",
     s5stat1L: "Indicative option price (Euríbor ≈ 3%)",
     s5stat2: "€300/m²",
