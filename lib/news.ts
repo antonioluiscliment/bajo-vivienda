@@ -233,7 +233,7 @@ export const NEWS: NewsItem[] = [
     sourceName: "Ministerio para la Transición Ecológica y el Reto Demográfico (MITECO)",
     sourceUrl:
       "https://www.miteco.gob.es/es/agua/temas/gestion-de-los-riesgos-de-inundacion/planes-gestion-riesgos-inundacion/obras-de-proteccion-frente-a-inundaciones/interceptormurcia.html",
-    mapQuery: "38.018,-1.129",
+    mapQuery: "38.0112,-1.1304",
     mapZoom: 14,
     content: {
       es: {
@@ -249,7 +249,7 @@ export const NEWS: NewsItem[] = [
         relationBody:
           "La rambla de Barnuevo discurre muy próxima a la avenida Juan de Borbón, atravesando el Sector ZP-Pn5 de Norte a Sur. La ejecución del interceptor resuelve el riesgo de avenidas por lluvias torrenciales asociado a esta rambla, lo que acelera el desarrollo del Sector al despejar una de las servidumbres hidráulicas que hoy condicionan su urbanización.",
         mapCaption:
-          "Trazado aproximado de la rambla de Barnuevo junto a la avenida Juan de Borbón, en su cruce con el Sector ZP-Pn5.",
+          "Trazado aproximado de la rambla de Barnuevo al Oeste de la avenida Juan de Borbón, a la altura de IKEA y el Centro Comercial Thader, junto al puente que la cruza desde ese lado —prácticamente a la altura del propio Sector ZP-Pn5, al otro lado de la avenida.",
         relatedLinks: [
           { label: "Oferta de terreno", href: "/oferta-terreno" },
           { label: "Usos e inversión", href: "/inversion" },
@@ -268,7 +268,7 @@ export const NEWS: NewsItem[] = [
         relationBody:
           "The Rambla de Barnuevo runs very close to Avenida Juan de Borbón, crossing Sector ZP-Pn5 from north to south. Building the interceptor resolves the flood risk this rambla poses during torrential rain, which speeds up the Sector's development by clearing one of the hydraulic constraints currently affecting its urbanisation.",
         mapCaption:
-          "Approximate route of the Rambla de Barnuevo alongside Avenida Juan de Borbón, where it crosses Sector ZP-Pn5.",
+          "Approximate route of the Rambla de Barnuevo west of Avenida Juan de Borbón, at the level of IKEA and the Thader shopping centre, next to the bridge that crosses it from that side —practically level with Sector ZP-Pn5 itself, on the other side of the avenue.",
         relatedLinks: [
           { label: "Land for sale", href: "/oferta-terreno" },
           { label: "Uses & investment", href: "/inversion" },
