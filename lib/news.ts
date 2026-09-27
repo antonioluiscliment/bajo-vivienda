@@ -220,10 +220,57 @@ export const NEWS: NewsItem[] = [
           "The current A-7 corridor runs right along the northern boundary of Sector ZP-Pn5, and today carries both long-distance through-traffic between Andalucía and the Levante and traffic accessing Murcia and its immediate surroundings, including El Puntal. Once the Arco Norte opens, that long-distance traffic will shift to the new bypass, a little further north, easing pressure on the stretch of the A-7 next to the Sector. In practice, that stretch will come to function mainly as the access route into Murcia through the Sector's surroundings, rather than as a congested through-corridor — a shift that reinforces both the accessibility and the appeal of the Sector for its planned tertiary, logistics and retail uses.",
         mapCaption:
           "Route of tramo B of the Arco Norte de Murcia ring road, between the MU-32 junction and the A-7 at Cabezo de Torres. Sector ZP-Pn5 sits along the current A-7 corridor, just south of this new bypass. (Source: Ministry of Transport and Sustainable Mobility)",
-        mapImageAlt:
-          "Official Ministry of Transport map showing the route of tramo B of the Arco Norte de Murcia, between Molina de Segura/Las Torres de Cotillas and the Cabezo de Torres junction with the A-7",
         relatedLinks: [
           { label: "Connectivity & access", href: "/conectividad" },
+          { label: "Uses & investment", href: "/inversion" },
+        ],
+      },
+    },
+  },
+  {
+    slug: "interceptor-zona-norte-murcia",
+    date: "2026-07-09",
+    sourceName: "Ministerio para la Transición Ecológica y el Reto Demográfico (MITECO)",
+    sourceUrl:
+      "https://www.miteco.gob.es/es/agua/temas/gestion-de-los-riesgos-de-inundacion/planes-gestion-riesgos-inundacion/obras-de-proteccion-frente-a-inundaciones/interceptormurcia.html",
+    mapQuery: "38.018,-1.129",
+    mapZoom: 14,
+    content: {
+      es: {
+        title: "El interceptor de la zona norte de Murcia avanza para blindar el Sector frente a las ramblas",
+        excerpt:
+          "El Ayuntamiento de Murcia y el Ministerio firman un protocolo para impulsar el colector interceptor que drenará las ramblas de Barnuevo, Churra y Torre y Espinardo hacia el Segura.",
+        body: [
+          "El Ministerio para la Transición Ecológica y el Reto Demográfico, a través de la Confederación Hidrográfica del Segura, tramita desde hace años el proyecto del colector interceptor de la zona norte de la ciudad de Murcia: una infraestructura hidráulica subterránea de unos siete kilómetros que recogerá las aguas de las ramblas de Churra y Torre, Barnuevo y Espinardo —mediante diques de retención y zonas de laminación en sus cabeceras— para conducirlas de forma controlada hasta el río Segura, a la altura de La Arboleja. La actuación forma parte del Plan de Gestión del Riesgo de Inundación (PGRI) de la Demarcación del Segura y cubre las cuatro áreas de riesgo de inundación (ARPSI ES070/0009-1 a -4) en las que se divide el norte de la ciudad.",
+          "El pasado 9 de julio de 2026, la alcaldesa de Murcia, Rebeca Pérez, y el secretario de Estado de Medio Ambiente, Hugo Alfonso Morán, firmaron un protocolo general de actuación para impulsar la ejecución de la obra en cuatro fases independientes, con una inversión de 1,68 millones de euros y 18 meses de plazo solo para redactar el proyecto de construcción, y un coste de ejecución estimado en torno a 102 millones de euros. Las distintas fases contemplan zonas de almacenamiento de entre 28.600 y 64.600 m³.",
+          "El proyecto lleva años de tramitación —la primera licitación de su redacción se remonta a 2016 y su anteproyecto se optimizó en 2021— por lo que el protocolo de julio de 2026 supone el impulso institucional más concreto hasta la fecha, aunque la obra sigue en fase de diseño y no se ha fijado todavía una fecha de inicio de las obras.",
+        ],
+        relationTitle: "¿Qué relación tiene con el Sector ZP-Pn5?",
+        relationBody:
+          "La rambla de Barnuevo discurre muy próxima a la avenida Juan de Borbón, atravesando el Sector ZP-Pn5 de Norte a Sur. La ejecución del interceptor resuelve el riesgo de avenidas por lluvias torrenciales asociado a esta rambla, lo que acelera el desarrollo del Sector al despejar una de las servidumbres hidráulicas que hoy condicionan su urbanización.",
+        mapCaption:
+          "Trazado aproximado de la rambla de Barnuevo junto a la avenida Juan de Borbón, en su cruce con el Sector ZP-Pn5.",
+        relatedLinks: [
+          { label: "Oferta de terreno", href: "/oferta-terreno" },
+          { label: "Usos e inversión", href: "/inversion" },
+        ],
+      },
+      en: {
+        title: "Northern Murcia flood interceptor moves forward, shielding the Sector from its ramblas",
+        excerpt:
+          "Murcia City Council and the Ministry sign a protocol to advance the interceptor collector that will drain the Barnuevo, Churra y Torre and Espinardo ramblas into the Segura river.",
+        body: [
+          "Spain's Ministry for Ecological Transition and Demographic Challenge, through the Confederación Hidrográfica del Segura, has for years been processing the project for the northern Murcia interceptor collector: an underground hydraulic structure roughly seven kilometres long that will collect water from the Churra y Torre, Barnuevo and Espinardo ramblas —via retention dikes and attenuation zones at their headwaters— and channel it in a controlled way into the Segura river, near La Arboleja. The work is part of the Segura river basin's Flood Risk Management Plan (PGRI) and covers all four flood risk areas (ARPSI ES070/0009-1 to -4) into which the city's northern zone is divided.",
+          "On 9 July 2026, Murcia's mayor, Rebeca Pérez, and Spain's Secretary of State for the Environment, Hugo Alfonso Morán, signed a general action protocol to push the works forward in four independent phases, with a €1.68 million, 18-month contract just to draft the construction project, and an estimated execution cost of around €102 million. The different phases include storage zones of between 28,600 and 64,600 m³.",
+          "The project has been years in the making —the first tender for its drafting dates back to 2016, and its preliminary design was optimised in 2021— so the July 2026 protocol marks the most concrete institutional push to date, though the works remain at the design stage and no start date has yet been set.",
+        ],
+        relationTitle: "How does this relate to Sector ZP-Pn5?",
+        relationBody:
+          "The Rambla de Barnuevo runs very close to Avenida Juan de Borbón, crossing Sector ZP-Pn5 from north to south. Building the interceptor resolves the flood risk this rambla poses during torrential rain, which speeds up the Sector's development by clearing one of the hydraulic constraints currently affecting its urbanisation.",
+        mapCaption:
+          "Approximate route of the Rambla de Barnuevo alongside Avenida Juan de Borbón, where it crosses Sector ZP-Pn5.",
+        relatedLinks: [
+          { label: "Land for sale", href: "/oferta-terreno" },
           { label: "Uses & investment", href: "/inversion" },
         ],
       },
