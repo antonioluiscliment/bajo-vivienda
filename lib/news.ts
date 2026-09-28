@@ -229,7 +229,7 @@ export const NEWS: NewsItem[] = [
   },
   {
     slug: "interceptor-zona-norte-murcia",
-    date: "2026-07-09",
+    date: "2026-09-27",
     sourceName: "Ministerio para la Transición Ecológica y el Reto Demográfico (MITECO)",
     sourceUrl:
       "https://www.miteco.gob.es/es/agua/temas/gestion-de-los-riesgos-de-inundacion/planes-gestion-riesgos-inundacion/obras-de-proteccion-frente-a-inundaciones/interceptormurcia.html",
@@ -239,11 +239,12 @@ export const NEWS: NewsItem[] = [
       es: {
         title: "El interceptor de la zona norte de Murcia avanza para blindar el Sector frente a las ramblas",
         excerpt:
-          "El Ayuntamiento de Murcia y el Ministerio firman un protocolo para impulsar el colector interceptor que drenará las ramblas de Barnuevo, Churra y Torre y Espinardo hacia el Segura.",
+          "El proyecto avanza hacia su evaluación ambiental: la segunda modificación del colector interceptor que drenará las ramblas de Barnuevo, Churra y Torre y Espinardo hacia el Segura se somete a consulta pública, con plazo de alegaciones hasta el 23 de octubre de 2026.",
         body: [
           "El Ministerio para la Transición Ecológica y el Reto Demográfico, a través de la Confederación Hidrográfica del Segura, tramita desde hace años el proyecto del colector interceptor de la zona norte de la ciudad de Murcia: una infraestructura hidráulica subterránea de unos siete kilómetros que recogerá las aguas de las ramblas de Churra y Torre, Barnuevo y Espinardo —mediante diques de retención y zonas de laminación en sus cabeceras— para conducirlas de forma controlada hasta el río Segura, a la altura de La Arboleja. La actuación forma parte del Plan de Gestión del Riesgo de Inundación (PGRI) de la Demarcación del Segura y cubre las cuatro áreas de riesgo de inundación (ARPSI ES070/0009-1 a -4) en las que se divide el norte de la ciudad.",
           "El pasado 9 de julio de 2026, la alcaldesa de Murcia, Rebeca Pérez, y el secretario de Estado de Medio Ambiente, Hugo Alfonso Morán, firmaron un protocolo general de actuación para impulsar la ejecución de la obra en cuatro fases independientes, con una inversión de 1,68 millones de euros y 18 meses de plazo solo para redactar el proyecto de construcción, y un coste de ejecución estimado en torno a 102 millones de euros. Las distintas fases contemplan zonas de almacenamiento de entre 28.600 y 64.600 m³.",
           "El proyecto lleva años de tramitación —la primera licitación de su redacción se remonta a 2016 y su anteproyecto se optimizó en 2021— por lo que el protocolo de julio de 2026 supone el impulso institucional más concreto hasta la fecha, aunque la obra sigue en fase de diseño y no se ha fijado todavía una fecha de inicio de las obras.",
+          "El 27 de septiembre de 2026, La Opinión de Murcia informó de que el colector interceptor ha dado un nuevo paso administrativo: la segunda modificación del proyecto se ha sometido a consulta pública dentro de su trámite de evaluación ambiental, con un plazo de alegaciones que culmina el 23 de octubre de 2026.",
         ],
         relationTitle: "¿Qué relación tiene con el Sector ZP-Pn5?",
         relationBody:
@@ -258,11 +259,12 @@ export const NEWS: NewsItem[] = [
       en: {
         title: "Northern Murcia flood interceptor moves forward, shielding the Sector from its ramblas",
         excerpt:
-          "Murcia City Council and the Ministry sign a protocol to advance the interceptor collector that will drain the Barnuevo, Churra y Torre and Espinardo ramblas into the Segura river.",
+          "The project moves toward its environmental assessment: a second modification of the interceptor collector that will drain the Barnuevo, Churra y Torre and Espinardo ramblas into the Segura river has been put out for public consultation, with an objection period running until 23 October 2026.",
         body: [
           "Spain's Ministry for Ecological Transition and Demographic Challenge, through the Confederación Hidrográfica del Segura, has for years been processing the project for the northern Murcia interceptor collector: an underground hydraulic structure roughly seven kilometres long that will collect water from the Churra y Torre, Barnuevo and Espinardo ramblas —via retention dikes and attenuation zones at their headwaters— and channel it in a controlled way into the Segura river, near La Arboleja. The work is part of the Segura river basin's Flood Risk Management Plan (PGRI) and covers all four flood risk areas (ARPSI ES070/0009-1 to -4) into which the city's northern zone is divided.",
           "On 9 July 2026, Murcia's mayor, Rebeca Pérez, and Spain's Secretary of State for the Environment, Hugo Alfonso Morán, signed a general action protocol to push the works forward in four independent phases, with a €1.68 million, 18-month contract just to draft the construction project, and an estimated execution cost of around €102 million. The different phases include storage zones of between 28,600 and 64,600 m³.",
           "The project has been years in the making —the first tender for its drafting dates back to 2016, and its preliminary design was optimised in 2021— so the July 2026 protocol marks the most concrete institutional push to date, though the works remain at the design stage and no start date has yet been set.",
+          "On 27 September 2026, La Opinión de Murcia reported that the interceptor collector has taken a new administrative step: a second modification of the project has been put out for public consultation as part of its environmental assessment procedure, with an objection period running until 23 October 2026.",
         ],
         relationTitle: "How does this relate to Sector ZP-Pn5?",
         relationBody:
@@ -271,6 +273,55 @@ export const NEWS: NewsItem[] = [
           "Approximate route of the Rambla de Barnuevo west of Avenida Juan de Borbón, at the level of IKEA and the Thader shopping centre, next to the bridge that crosses it from that side —practically level with Sector ZP-Pn5 itself, on the other side of the avenue.",
         relatedLinks: [
           { label: "Land for sale", href: "/oferta-terreno" },
+          { label: "Uses & investment", href: "/inversion" },
+        ],
+      },
+    },
+  },
+  {
+    slug: "costera-norte-tercer-carril-cabezo-torres-rectores",
+    date: "2026-09-28",
+    sourceName: "La Opinión de Murcia",
+    mapQuery: "38.024774,-1.147458",
+    mapZoom: 15,
+    content: {
+      es: {
+        title:
+          "El tercer carril de la Costera Norte, cada vez más cerca de completarse entre Cabezo de Torres y Los Rectores",
+        excerpt:
+          "El Ayuntamiento inicia las obras del tramo de Cabezo de Torres mientras culmina la recuperación del carril en Los Rectores, en los dos extremos de la vía que bordea el Sector.",
+        body: [
+          "La Costera Norte recuperará de forma definitiva su tercer carril de circulación gracias a dos actuaciones que avanzan en paralelo. El 28 de septiembre de 2026 el Ayuntamiento de Murcia inició las obras para acondicionar el tercer carril exterior en el tramo de Cabezo de Torres, entre la Vereda de Fortuna y la avenida Alto Atalayas —acceso al distrito por su zona noreste—, en una longitud de aproximadamente 1,1 km. La intervención, con un presupuesto de 129.792,89 € y un plazo de tres meses, incluye retirar los elementos provisionales, renovar la señalización horizontal e instalar nuevas protecciones para vehículos y bicicletas; también culminará la semirrotonda de la intersección con la calle Progreso, lo que permitirá abrir al tráfico el carril pendiente en ese punto.",
+          "En el extremo opuesto de la Costera Norte, en el entorno de Los Rectores, ya ha finalizado el desmontaje de las torres de alta tensión y del tendido aéreo que durante años estrechaban la plataforma viaria, lo que ha permitido recuperar la sección completa de la vía y dar continuidad al tercer carril en ese tramo por primera vez desde que se construyó la Costera Norte.",
+          "La alcaldesa de Murcia, Rebeca Pérez, visitó el inicio de las obras en Cabezo de Torres y destacó que el objetivo es que las infraestructuras existentes «funcionen a pleno rendimiento» para que los vecinos puedan desplazarse «de forma más cómoda y fluida» por el municipio.",
+        ],
+        relationTitle: "¿Qué relación tiene con el Sector ZP-Pn5?",
+        relationBody:
+          "La Costera Norte mejora las comunicaciones del Sector ZP-Pn5 desde sus dos extremos: por el Este, hacia Cabezo de Torres, donde se está recuperando el tercer carril; y por el Oeste, hacia Los Rectores, donde la retirada de las antiguas torres eléctricas ya ha liberado la sección completa de la vía. La consolidación de este eje viario en todo su recorrido refuerza la accesibilidad del entorno del Sector desde ambos sentidos, tanto para el tráfico cotidiano como para los usos terciarios, logísticos y comerciales previstos.",
+        mapCaption:
+          "Tramo de la Costera Norte en obras, en el acceso a Cabezo de Torres, al Este del Sector ZP-Pn5. En el extremo opuesto de esta misma vía, hacia el Oeste, se sitúa Los Rectores.",
+        relatedLinks: [
+          { label: "Conectividad y accesos", href: "/conectividad" },
+          { label: "Usos e inversión", href: "/inversion" },
+        ],
+      },
+      en: {
+        title:
+          "The Costera Norte's third lane nears completion between Cabezo de Torres and Los Rectores",
+        excerpt:
+          "The City Council starts works on the Cabezo de Torres stretch while the lane's recovery in Los Rectores is completed, at the two ends of the road bordering the Sector.",
+        body: [
+          "The Costera Norte will permanently regain its third traffic lane through two works advancing in parallel. On 28 September 2026, Murcia City Council began works to fit out the third outer lane on the Cabezo de Torres stretch, between Vereda de Fortuna and Avenida Alto Atalayas —the district's access point from the northeast— over roughly 1.1 km. The project, budgeted at €129,792.89 with a three-month timeline, includes removing temporary barriers, renewing horizontal signage and installing new protection for vehicles and cyclists; it will also complete the roundabout at the junction with Calle Progreso, opening the pending lane there to traffic.",
+          "At the other end of the Costera Norte, in the Los Rectores area, the dismantling of the high-voltage towers and overhead lines that for years narrowed the road has now been completed, restoring the road's full width and giving continuity to the third lane there for the first time since the Costera Norte was built.",
+          "Murcia's mayor, Rebeca Pérez, visited the start of the works in Cabezo de Torres and said the goal is for existing infrastructure to \"work at full capacity\" so residents can move around the municipality \"more comfortably and smoothly\".",
+        ],
+        relationTitle: "How does this relate to Sector ZP-Pn5?",
+        relationBody:
+          "The Costera Norte improves Sector ZP-Pn5's connections from both its ends: to the east, towards Cabezo de Torres, where the third lane is being recovered; and to the west, towards Los Rectores, where removing the old power-line towers has already freed up the road's full width. Consolidating this route along its whole length reinforces accessibility around the Sector from both directions, for everyday traffic as well as for its planned tertiary, logistics and retail uses.",
+        mapCaption:
+          "Stretch of the Costera Norte under works, at the access to Cabezo de Torres, east of Sector ZP-Pn5. At the opposite end of this same road, to the west, lies Los Rectores.",
+        relatedLinks: [
+          { label: "Connectivity & access", href: "/conectividad" },
           { label: "Uses & investment", href: "/inversion" },
         ],
       },
