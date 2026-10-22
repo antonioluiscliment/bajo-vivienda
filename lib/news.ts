@@ -142,7 +142,7 @@ export const NEWS: NewsItem[] = [
         body: [
           "El urbanismo del norte de Murcia vuelve a moverse. La Junta de Gobierno municipal ha aprobado la salida a información pública del Avance del plan parcial ZU-SD-CT12, conocido como «Cañada Ancha», situado al norte de Cabezo de Torres — el primer paso formal de su tramitación. El proyecto reduce la edificabilidad a un tercio de lo previsto originalmente (de más de 245.000 m² a casi 90.000 m²) para preservar los espacios naturales colindantes con Coto Cuadros y rebajar la densidad por razones paisajísticas, lo que permitirá levantar cerca de un millar de viviendas: bloques de media altura en la zona más al sur, y vivienda unifamiliar adosada y aislada en la parte más alta, con la obligación de ceder una instalación deportiva al Ayuntamiento.",
           "Junto a este plan, el sector ZB-SD-Ch7 de Churra —donde ya se ubican el estadio, el parque y el centro comercial Nueva Condomina— podría acoger hasta 4.000 viviendas más, con Iberdrola anunciando ya sus primeras promociones; y avanza también, según había adelantado el propio diario, la tramitación de otro plan parcial (ZU-SD-CT15) colindante con la zona del estadio, que permitirá más de medio millar de viviendas tras rebajar sustancialmente su edificabilidad.",
-          "Todo ello se enmarca en el intento del Ayuntamiento de dar salida a los llamados «convenios frustrados» de la zona norte, que en su día llegaron a generar una condena de más de 20 millones de euros contra el Consistorio a favor de la promotora Mamusa, tras la anulación del Plan Especial de Infraestructuras (PEI) que debía haber permitido desarrollar la zona. El concejal de Planificación Urbanística, Vivienda, Medio Ambiente y Huerta, Antonio Navarro Corchón, señala que donde los promotores veían hace una década una ruina heredada de la crisis del ladrillo, ahora vuelven a percibir una oportunidad gracias al alza del sector de la vivienda, y apunta al desarrollo completo del Arco Norte como palanca para descongestionar la circunvalación de Murcia y mejorar la accesibilidad de toda la zona — aunque reconoce que aún faltan por resolver las conexiones viarias desde el Sur y nuevas infraestructuras de saneamiento.",
+          "Todo ello se enmarca en el intento del Ayuntamiento de dar salida a los llamados «convenios frustrados» de la zona norte, que en su día llegaron a generar una condena de más de 20 millones de euros contra el Consistorio a favor de la promotora Mamusa, tras la anulación del Plan Especial de Infraestructuras (PEI) que debía haber permitido desarrollar la zona. El concejal de Planificación Urbanística, Vivienda, Medio Ambiente y Huerta, Antonio Navarro Corchón, señala que donde los promotores veían hace una década una ruina heredada de la crisis del ladrillo, ahora vuelven a percibir una oportunidad gracias al alza del sector de la vivienda, y apunta al desarrollo completo del Arco Norte como palanca para descongestionar la circunvalación de Murcia y mejorar la accesibilidad de toda la zona — aunque reconoce que aú~ faltan por resolver las conexiones viarias desde el Sur y nuevas infraestructuras de saneamiento.",
         ],
         relationTitle: "¿Qué relación tiene con el Sector ZP-Pn5?",
         relationBody:
@@ -333,7 +333,7 @@ export const NEWS: NewsItem[] = [
     sourceName: "Europa Press / Cadena Ser",
     sourceUrl:
       "https://cadenaser.com/murcia/2026/10/21/nueva-condomina-acelera-su-urbanizacion-con-275-millones-de-inversion-y-mas-de-dos-millones-de-metros-cuadrados-en-desarrollo-radio-murcia/",
-    mapQuery: "38.031,-1.148",
+    mapQuery: "38.045277,-1.151204",
     mapZoom: 14,
     content: {
       es: {
@@ -350,7 +350,7 @@ export const NEWS: NewsItem[] = [
         relationBody:
           "La zona de Nueva Condomina se sitúa al Norte de la autovía A-7, al Noreste del Sector ZP-Pn5. La consolidación de este desarrollo —el de mayor envergadura actualmente en ejecución en Murcia, con más de 2,1 millones de m² y cerca de 1.000 viviendas ya en tramitación— refuerza la centralidad del Sector dentro de la trama urbana: lejos de quedar como un enclave periférico, el Sector se integra en un desarrollo embebido en el núcleo urbano de la ciudad, con la autovía A-7 como frontera común entre ambos ámbitos. Esta integración en el núcleo urbano se produce, además, sin menoscabo de la excelente accesibilidad del Sector a las autovías A-7 y A-30, que siguen constituyendo sus principales ejes de conexión.",
         mapCaption:
-          "Entorno de Nueva Condomina, al Norte de la A-7 y al Noreste del Sector ZP-Pn5, donde avanza la segunda fase de urbanización de viales y redes de servicios.",
+          "Entorno de Nueva Condomina, junto a Leroy Merlín y el C.C. Nueva Condomina, al Norte de la A-7 y al Noreste del Sector ZP-Pn5, donde avanza la segunda fase de urbanización de viales y redes de servicios.",
         relatedLinks: [
           { label: "Conectividad y accesos", href: "/conectividad" },
           { label: "Usos e inversión", href: "/inversion" },
@@ -370,7 +370,7 @@ export const NEWS: NewsItem[] = [
         relationBody:
           "The Nueva Condomina area lies north of the A-7 motorway, northeast of Sector ZP-Pn5. The consolidation of this development — the largest currently underway in Murcia, with more than 2.1 million m² and close to 1,000 homes already in the pipeline — reinforces the Sector's central position within the urban fabric: far from remaining a peripheral enclave, the Sector becomes part of a development embedded in the city's urban core, with the A-7 motorway as the shared boundary between the two areas. This integration into the urban core comes, moreover, without any loss of the Sector's excellent accessibility to the A-7 and A-30 motorways, which remain its main connecting routes.",
         mapCaption:
-          "Surroundings of Nueva Condomina, north of the A-7 and northeast of Sector ZP-Pn5, where the second phase of road and utility works is under way.",
+          "Surroundings of Nueva Condomina, next to Leroy Merlín and the Nueva Condomina shopping centre, north of the A-7 and northeast of Sector ZP-Pn5, where the second phase of road and utility works is under way.",
         relatedLinks: [
           { label: "Connectivity & access", href: "/conectividad" },
           { label: "Uses & investment", href: "/inversion" },
