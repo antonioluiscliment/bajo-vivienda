@@ -167,72 +167,6 @@ export const NEWS: NewsItem[] = [
         relationBody:
           "The area affected by these plans sits next to the Nueva Condomina stadium and shopping centre, northeast of Sector ZP-Pn5. Taking as a reference point the junction between Avenida Juan de Borbón — in its extension as the A-30 — and the A-7 motorway, Sector ZP-Pn5 lies in the lower-left quadrant of that junction, entirely to the south, towards the city centre, while these new developments sit in the upper-right quadrant. Even without being adjoining, both areas form part of the same expansion axis now being revived north of Murcia, and the consolidation of this zone — with thousands of new homes and the improved connectivity the Arco Norte will bring — reinforces the overall appeal of the wider area the Sector sits within.",
         mapCaption:
-          "ayna, frente a Churra, junto a la avenida Juan de Borbón.",
-        relatedLinks: [
-          { label: "Oferta de terreno", href: "/oferta-terreno" },
-          { label: "Entorno comercial", href: "/entorno" },
-        ],
-      },
-      en: {
-        title: "The Torre Alcayna farmhouse, in El Puntal, to be restored as an event venue",
-        excerpt:
-          "The City Council approves a 35% ICIO tax rebate to make possible the restoration of this historic building of the Murcian huerta.",
-        body: [
-          "Murcia City Council has approved a 35% rebate on ICIO (the tax on construction, installations and works) to make possible the restoration of the Torre Alcayna farmhouse, a historic building of the Murcian huerta located on the boundary between El Puntal and Churra, severely affected by damage and partial collapses.",
-          "The Hispania Nostra association added the building to its Red List of Spain's Heritage (Lista Roja del Patrimonio) several years ago, then describing \"a very worrying state of conservation, with its facade shored up and countless instances of damage, cracks, subsidence and collapses\". Before that listing, the Association for the Conservation of the Heritage of the Huerta de Murcia (Huermur) had for some time been denouncing its deterioration. The building is listed and protected under the Plan General de Ordenación Urbana (PGOU), and stands as a record of the typical 18th-century constructions of the Murcian huerta, tied to the area's farming and livestock activity.",
-          "According to Murcia Plaza's coverage, the building already held a rehabilitation licence, pending resolution of this tax rebate before works could begin, to be carried out by the construction firm URBITEC-ANDRYNSA.",
-        ],
-        relationTitle: "How does this relate to Sector ZP-Pn5?",
-        relationBody:
-          "The Torre Alcayna farmhouse gives its name to the housing development of the same name, located opposite Churra, on the other side of Avenida Juan de Borbón. This residential area borders Plan Parcial ZM-Pn01, a sector of developable residential and tertiary-use land in the El Puntal district, which extends just south of the two stages of the Parque de Actividad Económica — of which Sector ZP-Pn5 is the second stage. The urban consolidation of this immediate surrounding area, through initiatives such as the restoration of the Torre Alcayna farmhouse, reinforces the Sector's central position within the urban fabric taking shape north of Murcia.",
-        mapCaption:
-          "Surroundings of the Torre Alcayna housing development, opposite Churra, next to Avenida Juan de Borbón.",
-        relatedLinks: [
-          { label: "Land for sale", href: "/oferta-terreno" },
-          { label: "Retail surroundings", href: "/entorno" },
-        ],
-      },
-    },
-  },
-  {
-    slug: "plan-parcial-canada-ancha-zona-norte",
-    date: "2026-08-23",
-    sourceName: "La Verdad",
-    mapQuery: "38.031,-1.148",
-    mapZoom: 14,
-    content: {
-      es: {
-        title: "Otro plan urbanístico reactiva el interés por la zona norte de Murcia",
-        excerpt:
-          "Arranca la tramitación de un nuevo plan parcial junto a Coto Cuadros, en un contexto de recuperación de los antiguos convenios urbanísticos de la zona norte.",
-        body: [
-          "El urbanismo del norte de Murcia vuelve a moverse. La Junta de Gobierno municipal ha aprobado la salida a información pública del Avance del plan parcial ZU-SD-CT12, conocido como «Cañada Ancha», situado al norte de Cabezo de Torres — el primer paso formal de su tramitación. El proyecto reduce la edificabilidad a un tercio de lo previsto originalmente (de más de 245.000 m² a casi 90.000 m²) para preservar los espacios naturales colindantes con Coto Cuadros y rebajar la densidad por razones paisajísticas, lo que permitirá levantar cerca de un millar de viviendas: bloques de media altura en la zona más al sur, y vivienda unifamiliar adosada y aislada en la parte más alta, con la obligación de ceder una instalación deportiva al Ayuntamiento.",
-          "Junto a este plan, el sector ZB-SD-Ch7 de Churra —donde ya se ubican el estadio, el parque y el centro comercial Nueva Condomina— podría acoger hasta 4.000 viviendas más, con Iberdrola anunciando ya sus primeras promociones; y avanza también, según había adelantado el propio diario, la tramitación de otro plan parcial (ZU-SD-CT15) colindante con la zona del estadio, que permitirá más de medio millar de viviendas tras rebajar sustancialmente su edificabilidad.",
-          "Todo ello se enmarca en el intento del Ayuntamiento de dar salida a los llamados «convenios frustrados» de la zona norte, que en su día llegaron a generar una condena de más de 20 millones de euros contra el Consistorio a favor de la promotora Mamusa, tras la anulación del Plan Especial de Infraestructuras (PEI) que debía haber permitido desarrollar la zona. El concejal de Planificación Urbanística, Vivienda, Medio Ambiente y Huerta, Antonio Navarro Corchón, señala que donde los promotores veían hace una década una ruina heredada de la crisis del ladrillo, ahora vuelven a percibir una oportunidad gracias al alza del sector de la vivienda, y apunta al desarrollo completo del Arco Norte como palanca para descongestionar la circunvalación de Murcia y mejorar la accesibilidad de toda la zona — aunque reconoce que aún faltan por resolver las conexiones viarias desde el Sur y nuevas infraestructuras de saneamiento.",
-        ],
-        relationTitle: "¿Qué relación tiene con el Sector ZP-Pn5?",
-        relationBody:
-          "La zona afectada por estos planes se sitúa junto al estadio y al centro comercial de Nueva Condomina, al Noreste del Sector ZP-Pn5. Tomando como referencia el cruce entre la avenida Juan de Borbón —en su prolongación como A-30— y la autovía A-7, el Sector ZP-Pn5 queda en el cuadrante inferior izquierdo de ese cruce, completamente al Sur, hacia el centro de la ciudad, mientras que estos nuevos desarrollos se sitúan en el cuadrante superior derecho. Aun sin ser colindantes, ambos ámbitos forman parte del mismo eje de expansión que se está reactivando al Norte de Murcia, y la consolidación de esta zona —con miles de viviendas nuevas y la mejora de conectividad que traerá el Arco Norte— refuerza el atractivo general del entorno en el que se sitúa el Sector.",
-        mapCaption:
-          "Entorno de Nueva Condomina y el enlace de la A-7 con la prolongación de la avenida Juan de Borbón (A-30). El Sector ZP-Pn5 queda al Suroeste de este cruce, hacia el centro de la ciudad.",
-        relatedLinks: [
-          { label: "Usos e inversión", href: "/inversion" },
-          { label: "Conectividad y accesos", href: "/conectividad" },
-        ],
-      },
-      en: {
-        title: "Another urban plan revives interest in Murcia's northern area",
-        excerpt:
-          "Processing begins on a new plan parcial next to Coto Cuadros, amid a broader revival of the northern area's long-stalled planning agreements.",
-        body: [
-          "Urban planning in northern Murcia is moving again. The municipal Junta de Gobierno has approved putting the Avance (early draft) of plan parcial ZU-SD-CT12, known as \"Cañada Ancha\", out for public information — the first formal step of its processing. Located north of Cabezo de Torres, the project cuts its buildable floor area to a third of what was originally planned (from over 245,000 m² to almost 90,000 m²) to preserve the natural areas bordering Coto Cuadros and reduce density for landscape reasons, allowing for close to a thousand homes: mid-rise blocks in the southern part, and semi-detached and detached housing higher up, with an obligation to hand over a sports facility to the City Council.",
-          "Alongside this plan, the nearby ZB-SD-Ch7 sector in Churra — where the stadium, park and Nueva Condomina shopping centre already sit — could see up to 4,000 further homes, with Iberdrola having already announced its first developments there; and, as the newspaper itself had previously reported, another plan parcial (ZU-SD-CT15) adjoining the stadium area is also progressing, allowing for more than 500 homes after substantially cutting its buildable area.",
-          "All of this forms part of the City Council's effort to resolve the long-running \"frustrated agreements\" (convenios frustrados) of the northern area, which years ago led to a court ruling of over €20 million against the Council in favour of developer Mamusa, after the Plan Especial de Infraestructuras (PEI) needed to unlock the area was annulled. The Councilor for Urban Planning, Housing, Environment and Huerta, Antonio Navarro Corchón, notes that where developers saw ruin a decade ago after the construction-sector crisis, they now see opportunity again thanks to the housing market upswing, and points to the full build-out of the Arco Norte ring road as key to relieving pressure on Murcia's beltway and improving accessibility across the area — while acknowledging that road connections from the south, and new sanitation infrastructure, still need to be resolved.",
-        ],
-        relationTitle: "How does this relate to Sector ZP-Pn5?",
-        relationBody:
-          "The area affected by these plans sits next to the Nueva Condomina stadium and shopping centre, northeast of Sector ZP-Pn5. Taking as a reference point the junction between Avenida Juan de Borbón — in its extension as the A-30 — and the A-7 motorway, Sector ZP-Pn5 lies in the lower-left quadrant of that junction, entirely to the south, towards the city centre, while these new developments sit in the upper-right quadrant. Even without being adjoining, both areas form part of the same expansion axis now being revived north of Murcia, and the consolidation of this zone — with thousands of new homes and the improved connectivity the Arco Norte will bring — reinforces the overall appeal of the wider area the Sector sits within.",
-        mapCaption:
           "The Nueva Condomina area and the A-7 junction with the Avenida Juan de Borbón extension (A-30). Sector ZP-Pn5 lies to the southwest of this junction, towards the city centre.",
         relatedLinks: [
           { label: "Uses & investment", href: "/inversion" },
@@ -386,6 +320,57 @@ export const NEWS: NewsItem[] = [
           "The Costera Norte improves Sector ZP-Pn5's connections from both its ends: to the east, towards Cabezo de Torres, where the third lane is being recovered; and to the west, towards Los Rectores, where removing the old power-line towers has already freed up the road's full width. Consolidating this route along its whole length reinforces accessibility around the Sector from both directions, for everyday traffic as well as for its planned tertiary, logistics and retail uses.",
         mapCaption:
           "Stretch of the Costera Norte under works, at the access to Cabezo de Torres, east of Sector ZP-Pn5. At the opposite end of this same road, to the west, lies Los Rectores.",
+        relatedLinks: [
+          { label: "Connectivity & access", href: "/conectividad" },
+          { label: "Uses & investment", href: "/inversion" },
+        ],
+      },
+    },
+  },
+  {
+    slug: "nueva-condomina-segunda-fase-urbanizacion",
+    date: "2026-10-21",
+    sourceName: "Europa Press / Cadena Ser",
+    sourceUrl:
+      "https://cadenaser.com/murcia/2026/10/21/nueva-condomina-acelera-su-urbanizacion-con-275-millones-de-inversion-y-mas-de-dos-millones-de-metros-cuadrados-en-desarrollo-radio-murcia/",
+    mapQuery: "38.031,-1.148",
+    mapZoom: 14,
+    content: {
+      es: {
+        title:
+          "La urbanización de Nueva Condomina entra en su segunda fase, con nuevos viales y redes de servicios",
+        excerpt:
+          "Tres meses después del inicio de las obras, avanzan en paralelo los viales, el saneamiento y las conexiones eléctricas del mayor desarrollo urbanístico en marcha en Murcia, con finalización prevista a principios de 2028.",
+        body: [
+          "La urbanización de la zona de Nueva Condomina ha entrado en su segunda fase, con el despliegue de nuevos viales, redes de servicios e infraestructuras urbanas en distintos puntos del sector. Tres meses después del inicio de las obras, el calendario mantiene el plazo de ejecución de 18 meses, por lo que está previsto que todas las actuaciones estén completadas a principios de 2028. La evolución de los trabajos se presentó durante una visita en la que participaron el concejal de Planificación Urbanística, Vivienda, Medio Ambiente y Huerta del Ayuntamiento de Murcia, Antonio Navarro; la presidenta de la Junta de Compensación de Nueva Condomina, Rosa San Julián; y Diego Sánchez, responsable técnico de la obra. Cadena Ser Murcia recogió además un audio con las declaraciones de Antonio Navarro sobre el desarrollo del proyecto.",
+          "Con una inversión de 27,5 millones de euros y más de 2,1 millones de metros cuadrados de superficie, Nueva Condomina constituye el desarrollo urbanístico de mayor envergadura actualmente en ejecución en la ciudad de Murcia. Sobre el terreno se trabaja ya en la construcción y reparación de viales, las redes de saneamiento y evacuación de aguas pluviales, las conexiones eléctricas y el acondicionamiento de aceras y calzadas, además de los tanques de tormenta, dos zonas de aparcamiento disuasorio en el acceso a La Alcayna y el acondicionamiento de los espacios verdes que se integrarán en el futuro parque forestal del ámbito.",
+          "«Entramos en un momento especialmente importante porque la transformación empieza a apreciarse con mayor claridad», señaló Rosa San Julián, quien destacó que Nueva Condomina parte de una posición privilegiada, junto a una zona con actividad comercial y de ocio, grandes equipamientos y conexiones ya operativas. Diego Sánchez, por su parte, explicó que «hemos pasado de los primeros movimientos de tierra a una etapa con varios trabajos en marcha de forma simultánea», con el reto de coordinar las redes subterráneas, la configuración del viario y el resto de infraestructuras. En paralelo, las licencias ya solicitadas por distintos promotores prevén la incorporación de más de 1.000 viviendas en la zona para 2027.",
+        ],
+        relationTitle: "¿Qué relación tiene con el Sector ZP-Pn5?",
+        relationBody:
+          "La zona de Nueva Condomina se sitúa al Norte de la autovía A-7, al Noreste del Sector ZP-Pn5. La consolidación de este desarrollo —el de mayor envergadura actualmente en ejecución en Murcia, con más de 2,1 millones de m² y cerca de 1.000 viviendas ya en tramitación— refuerza la centralidad del Sector dentro de la trama urbana: lejos de quedar como un enclave periférico, el Sector se integra en un desarrollo embebido en el núcleo urbano de la ciudad, con la autovía A-7 como frontera común entre ambos ámbitos. Esta integración en el núcleo urbano se produce, además, sin menoscabo de la excelente accesibilidad del Sector a las autovías A-7 y A-30, que siguen constituyendo sus principales ejes de conexión.",
+        mapCaption:
+          "Entorno de Nueva Condomina, al Norte de la A-7 y al Noreste del Sector ZP-Pn5, donde avanza la segunda fase de urbanización de viales y redes de servicios.",
+        relatedLinks: [
+          { label: "Conectividad y accesos", href: "/conectividad" },
+          { label: "Usos e inversión", href: "/inversion" },
+        ],
+      },
+      en: {
+        title:
+          "Nueva Condomina's urbanisation enters its second phase, with new roads and utility networks",
+        excerpt:
+          "Three months after works began, roads, drainage and electrical connections are advancing in parallel on Murcia's largest urban development underway, with completion expected by early 2028.",
+        body: [
+          "The urbanisation of the Nueva Condomina area has entered its second phase, rolling out new roads, utility networks and urban infrastructure across different parts of the area. Three months after works began, the schedule still holds to an 18-month execution period, so all works are expected to be completed by early 2028. Progress was presented during a site visit attended by Murcia City Council's Councilor for Urban Planning, Housing, Environment and Huerta, Antonio Navarro; the president of the Nueva Condomina Junta de Compensación, Rosa San Julián; and Diego Sánchez, the project's technical lead. Cadena Ser Murcia also carried an audio clip with Antonio Navarro's statements on the project's progress.",
+          "With an investment of €27.5 million and more than 2.1 million square metres of surface area, Nueva Condomina is the largest urban development currently underway in the city of Murcia. On site, work is already underway on building and repairing roads, drainage and stormwater networks, electrical connections and kerb and pavement works, along with storm tanks, two park-and-ride areas at the access to La Alcayna, and the preparation of green spaces that will become part of the area's planned forest park.",
+          "\"We're entering a particularly important moment, because the transformation is starting to become clearer,\" said Rosa San Julián, who highlighted Nueva Condomina's privileged starting position, next to an area with retail and leisure activity, major amenities and already-operational connections. Diego Sánchez, for his part, explained that \"we've moved from the first earthworks to a stage with several jobs under way at the same time,\" with the challenge now being to coordinate underground networks, the road layout and the rest of the infrastructure. In parallel, licences already requested by various developers point to more than 1,000 homes being added to the area by 2027.",
+        ],
+        relationTitle: "How does this relate to Sector ZP-Pn5?",
+        relationBody:
+          "The Nueva Condomina area lies north of the A-7 motorway, northeast of Sector ZP-Pn5. The consolidation of this development — the largest currently underway in Murcia, with more than 2.1 million m² and close to 1,000 homes already in the pipeline — reinforces the Sector's central position within the urban fabric: far from remaining a peripheral enclave, the Sector becomes part of a development embedded in the city's urban core, with the A-7 motorway as the shared boundary between the two areas. This integration into the urban core comes, moreover, without any loss of the Sector's excellent accessibility to the A-7 and A-30 motorways, which remain its main connecting routes.",
+        mapCaption:
+          "Surroundings of Nueva Condomina, north of the A-7 and northeast of Sector ZP-Pn5, where the second phase of road and utility works is under way.",
         relatedLinks: [
           { label: "Connectivity & access", href: "/conectividad" },
           { label: "Uses & investment", href: "/inversion" },
